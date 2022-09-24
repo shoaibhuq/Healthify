@@ -20,8 +20,3 @@ struct DoctorFormView: View {
     }
 }
 
-struct DoctorFormView_Previews: PreviewProvider {
-    static var previews: some View {
-        DoctorFormView()
-    }
-}

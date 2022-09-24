@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		423F8BC928DEF40E00874A5D /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423F8BC828DEF40E00874A5D /* ARViewContainer.swift */; };
+		423F8BCB28DEF67300874A5D /* SkeletonJoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423F8BCA28DEF67300874A5D /* SkeletonJoint.swift */; };
+		423F8BCD28DEF69B00874A5D /* SkeletonBone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423F8BCC28DEF69B00874A5D /* SkeletonBone.swift */; };
+		423F8BCF28DEF72A00874A5D /* Bones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423F8BCE28DEF72A00874A5D /* Bones.swift */; };
+		423F8BD128DF00D900874A5D /* BodySkeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423F8BD028DF00D900874A5D /* BodySkeleton.swift */; };
+		423F8BD628DF274600874A5D /* character in Resources */ = {isa = PBXBuildFile; fileRef = 423F8BD528DF274600874A5D /* character */; };
+		423F8BD828DF27E900874A5D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423F8BD728DF27E900874A5D /* HomeView.swift */; };
 		89A4DF7D28DEE9B600D325BA /* HealthifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A4DF7C28DEE9B600D325BA /* HealthifyApp.swift */; };
 		89A4DF7F28DEE9B600D325BA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A4DF7E28DEE9B600D325BA /* ContentView.swift */; };
 		89A4DF8128DEE9B900D325BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89A4DF8028DEE9B900D325BA /* Assets.xcassets */; };
@@ -14,6 +21,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		423F8BC828DEF40E00874A5D /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
+		423F8BCA28DEF67300874A5D /* SkeletonJoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonJoint.swift; sourceTree = "<group>"; };
+		423F8BCC28DEF69B00874A5D /* SkeletonBone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonBone.swift; sourceTree = "<group>"; };
+		423F8BCE28DEF72A00874A5D /* Bones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bones.swift; sourceTree = "<group>"; };
+		423F8BD028DF00D900874A5D /* BodySkeleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodySkeleton.swift; sourceTree = "<group>"; };
+		423F8BD528DF274600874A5D /* character */ = {isa = PBXFileReference; lastKnownFileType = folder; path = character; sourceTree = "<group>"; };
+		423F8BD728DF27E900874A5D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		89A4DF7928DEE9B600D325BA /* Healthify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Healthify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89A4DF7C28DEE9B600D325BA /* HealthifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthifyApp.swift; sourceTree = "<group>"; };
 		89A4DF7E28DEE9B600D325BA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +46,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		423F8BD228DF214D00874A5D /* Junk */ = {
+			isa = PBXGroup;
+			children = (
+				423F8BCA28DEF67300874A5D /* SkeletonJoint.swift */,
+				423F8BCC28DEF69B00874A5D /* SkeletonBone.swift */,
+				423F8BCE28DEF72A00874A5D /* Bones.swift */,
+				423F8BD028DF00D900874A5D /* BodySkeleton.swift */,
+			);
+			path = Junk;
+			sourceTree = "<group>";
+		};
 		89A4DF7028DEE9B600D325BA = {
 			isa = PBXGroup;
 			children = (
@@ -53,6 +78,10 @@
 			children = (
 				89A4DF7C28DEE9B600D325BA /* HealthifyApp.swift */,
 				89A4DF7E28DEE9B600D325BA /* ContentView.swift */,
+				423F8BD728DF27E900874A5D /* HomeView.swift */,
+				423F8BC828DEF40E00874A5D /* ARViewContainer.swift */,
+				423F8BD528DF274600874A5D /* character */,
+				423F8BD228DF214D00874A5D /* Junk */,
 				89A4DF8028DEE9B900D325BA /* Assets.xcassets */,
 				89A4DF8228DEE9B900D325BA /* Preview Content */,
 			);
@@ -125,6 +154,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				423F8BD628DF274600874A5D /* character in Resources */,
 				89A4DF8428DEE9B900D325BA /* Preview Assets.xcassets in Resources */,
 				89A4DF8128DEE9B900D325BA /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +167,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				423F8BD128DF00D900874A5D /* BodySkeleton.swift in Sources */,
 				89A4DF7F28DEE9B600D325BA /* ContentView.swift in Sources */,
+				423F8BCF28DEF72A00874A5D /* Bones.swift in Sources */,
+				423F8BCD28DEF69B00874A5D /* SkeletonBone.swift in Sources */,
 				89A4DF7D28DEE9B600D325BA /* HealthifyApp.swift in Sources */,
+				423F8BD828DF27E900874A5D /* HomeView.swift in Sources */,
+				423F8BC928DEF40E00874A5D /* ARViewContainer.swift in Sources */,
+				423F8BCB28DEF67300874A5D /* SkeletonJoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +231,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +285,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -267,9 +303,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Healthify/Preview Content\"";
-				DEVELOPMENT_TEAM = 6F3A58SWMP;
+				DEVELOPMENT_TEAM = T76274KP97;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "TURN ON THE CAMERA!!!!!";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -280,7 +317,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ShoaibHuq.Healthify;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.khang.nguyen.trd.Healthify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -296,9 +333,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Healthify/Preview Content\"";
-				DEVELOPMENT_TEAM = 6F3A58SWMP;
+				DEVELOPMENT_TEAM = T76274KP97;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "TURN ON THE CAMERA!!!!!";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -309,7 +347,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ShoaibHuq.Healthify;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.khang.nguyen.trd.Healthify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

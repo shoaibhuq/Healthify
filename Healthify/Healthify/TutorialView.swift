@@ -7,11 +7,12 @@
 
 import SwiftUI
 
-struct AnimationView: View {
+struct TutorialView: View {
     @State var checkupPresented = false
     var body: some View {
         VStack {
-            LottieView(name: "AHLSDFS")
+//            LottieView(name: "lottie.json")
+            GifImage("ThuNha")
             Text("sldafkjdslafkj")
             Text("sldafkjdslafkj")
             Text("sldafkjdslafkj")
@@ -31,8 +32,3 @@ struct AnimationView: View {
     }
 }
 
-struct AnimationView_Previews: PreviewProvider {
-    static var previews: some View {
-        AnimationView()
-    }
-}

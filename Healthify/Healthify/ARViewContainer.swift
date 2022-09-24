@@ -15,8 +15,6 @@ var character: BodyTrackedEntity?
 let characterAnchor = AnchorEntity()
 let characterOffset: SIMD3<Float> = [-1.0, 0, 0] // Offset the character by one meter to the left
 
-private var bodySkeleton: BodySkeleton?
-private let bodySkeletonAnchor = AnchorEntity()
 struct ARViewContainer: UIViewRepresentable {
 
     typealias UIViewType = ARView

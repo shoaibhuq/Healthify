@@ -15,7 +15,7 @@ struct HomeView: View {
             Text("HEALTHIFY")
                 .font(.title)
 
-            NavigationLink(destination: AnimationView(), label: { Text("Start checkup") })
+            NavigationLink(destination: TutorialView(), label: { Text("Start checkup") })
         }
     }
 }

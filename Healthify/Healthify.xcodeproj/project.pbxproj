@@ -18,6 +18,7 @@
 		89A4DF7F28DEE9B600D325BA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A4DF7E28DEE9B600D325BA /* ContentView.swift */; };
 		89A4DF8128DEE9B900D325BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89A4DF8028DEE9B900D325BA /* Assets.xcassets */; };
 		89A4DF8428DEE9B900D325BA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89A4DF8328DEE9B900D325BA /* Preview Assets.xcassets */; };
+		89A4DFB328DF7BFE00D325BA /* EventLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A4DFB228DF7BFE00D325BA /* EventLogic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		89A4DF7E28DEE9B600D325BA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		89A4DF8028DEE9B900D325BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89A4DF8328DEE9B900D325BA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		89A4DFB228DF7BFE00D325BA /* EventLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventLogic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				423F8BDB28DF354200874A5D /* Bones.swift */,
 				423F8BD928DF354100874A5D /* SkeletonBone.swift */,
 				423F8BDC28DF354200874A5D /* SkeletonJoint.swift */,
+				89A4DFB228DF7BFE00D325BA /* EventLogic.swift */,
 				423F8BD528DF274600874A5D /* character */,
 				423F8BD228DF214D00874A5D /* Junk */,
 				89A4DF8028DEE9B900D325BA /* Assets.xcassets */,
@@ -172,6 +175,7 @@
 				423F8BDE28DF354200874A5D /* BodySkeleton.swift in Sources */,
 				423F8BDF28DF354200874A5D /* Bones.swift in Sources */,
 				89A4DF7D28DEE9B600D325BA /* HealthifyApp.swift in Sources */,
+				89A4DFB328DF7BFE00D325BA /* EventLogic.swift in Sources */,
 				423F8BD828DF27E900874A5D /* HomeView.swift in Sources */,
 				423F8BC928DEF40E00874A5D /* ARViewContainer.swift in Sources */,
 				423F8BE028DF354200874A5D /* SkeletonJoint.swift in Sources */,

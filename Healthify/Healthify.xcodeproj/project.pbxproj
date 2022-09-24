@@ -10,10 +10,11 @@
 		423F8BC928DEF40E00874A5D /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423F8BC828DEF40E00874A5D /* ARViewContainer.swift */; };
 		423F8BD628DF274600874A5D /* character in Resources */ = {isa = PBXBuildFile; fileRef = 423F8BD528DF274600874A5D /* character */; };
 		423F8BD828DF27E900874A5D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423F8BD728DF27E900874A5D /* HomeView.swift */; };
-		423F8BDD28DF354200874A5D /* SkeletonBone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423F8BD928DF354100874A5D /* SkeletonBone.swift */; };
-		423F8BDE28DF354200874A5D /* BodySkeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423F8BDA28DF354100874A5D /* BodySkeleton.swift */; };
-		423F8BDF28DF354200874A5D /* Bones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423F8BDB28DF354200874A5D /* Bones.swift */; };
-		423F8BE028DF354200874A5D /* SkeletonJoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423F8BDC28DF354200874A5D /* SkeletonJoint.swift */; };
+		423F8BE328DF7CC600874A5D /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 423F8BE228DF7CC600874A5D /* Lottie */; };
+		423F8BE528DF7D1200874A5D /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423F8BE428DF7D1200874A5D /* LottieView.swift */; };
+		423F8BE728DF7D3E00874A5D /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423F8BE628DF7D3E00874A5D /* AnimationView.swift */; };
+		423F8BE928DF7F4600874A5D /* DoctorFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423F8BE828DF7F4600874A5D /* DoctorFormView.swift */; };
+		423F8BEB28DF7F5700874A5D /* DoctorFormModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423F8BEA28DF7F5700874A5D /* DoctorFormModel.swift */; };
 		89A4DF7D28DEE9B600D325BA /* HealthifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A4DF7C28DEE9B600D325BA /* HealthifyApp.swift */; };
 		89A4DF7F28DEE9B600D325BA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A4DF7E28DEE9B600D325BA /* ContentView.swift */; };
 		89A4DF8128DEE9B900D325BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89A4DF8028DEE9B900D325BA /* Assets.xcassets */; };
@@ -25,10 +26,10 @@
 		423F8BC828DEF40E00874A5D /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
 		423F8BD528DF274600874A5D /* character */ = {isa = PBXFileReference; lastKnownFileType = folder; path = character; sourceTree = "<group>"; };
 		423F8BD728DF27E900874A5D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		423F8BD928DF354100874A5D /* SkeletonBone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkeletonBone.swift; sourceTree = "<group>"; };
-		423F8BDA28DF354100874A5D /* BodySkeleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BodySkeleton.swift; sourceTree = "<group>"; };
-		423F8BDB28DF354200874A5D /* Bones.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bones.swift; sourceTree = "<group>"; };
-		423F8BDC28DF354200874A5D /* SkeletonJoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkeletonJoint.swift; sourceTree = "<group>"; };
+		423F8BE428DF7D1200874A5D /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
+		423F8BE628DF7D3E00874A5D /* AnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationView.swift; sourceTree = "<group>"; };
+		423F8BE828DF7F4600874A5D /* DoctorFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorFormView.swift; sourceTree = "<group>"; };
+		423F8BEA28DF7F5700874A5D /* DoctorFormModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorFormModel.swift; sourceTree = "<group>"; };
 		89A4DF7928DEE9B600D325BA /* Healthify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Healthify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89A4DF7C28DEE9B600D325BA /* HealthifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthifyApp.swift; sourceTree = "<group>"; };
 		89A4DF7E28DEE9B600D325BA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				423F8BE328DF7CC600874A5D /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,11 +79,11 @@
 				89A4DF7C28DEE9B600D325BA /* HealthifyApp.swift */,
 				89A4DF7E28DEE9B600D325BA /* ContentView.swift */,
 				423F8BD728DF27E900874A5D /* HomeView.swift */,
+				423F8BE828DF7F4600874A5D /* DoctorFormView.swift */,
+				423F8BEA28DF7F5700874A5D /* DoctorFormModel.swift */,
+				423F8BE628DF7D3E00874A5D /* AnimationView.swift */,
+				423F8BE428DF7D1200874A5D /* LottieView.swift */,
 				423F8BC828DEF40E00874A5D /* ARViewContainer.swift */,
-				423F8BDA28DF354100874A5D /* BodySkeleton.swift */,
-				423F8BDB28DF354200874A5D /* Bones.swift */,
-				423F8BD928DF354100874A5D /* SkeletonBone.swift */,
-				423F8BDC28DF354200874A5D /* SkeletonJoint.swift */,
 				89A4DFB228DF7BFE00D325BA /* EventLogic.swift */,
 				423F8BD528DF274600874A5D /* character */,
 				423F8BD228DF214D00874A5D /* Junk */,
@@ -115,6 +117,9 @@
 			dependencies = (
 			);
 			name = Healthify;
+			packageProductDependencies = (
+				423F8BE228DF7CC600874A5D /* Lottie */,
+			);
 			productName = Healthify;
 			productReference = 89A4DF7928DEE9B600D325BA /* Healthify.app */;
 			productType = "com.apple.product-type.application";
@@ -143,6 +148,9 @@
 				Base,
 			);
 			mainGroup = 89A4DF7028DEE9B600D325BA;
+			packageReferences = (
+				423F8BE128DF7CC600874A5D /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = 89A4DF7A28DEE9B600D325BA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -171,14 +179,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				89A4DF7F28DEE9B600D325BA /* ContentView.swift in Sources */,
-				423F8BDD28DF354200874A5D /* SkeletonBone.swift in Sources */,
-				423F8BDE28DF354200874A5D /* BodySkeleton.swift in Sources */,
-				423F8BDF28DF354200874A5D /* Bones.swift in Sources */,
+				423F8BE928DF7F4600874A5D /* DoctorFormView.swift in Sources */,
+				423F8BEB28DF7F5700874A5D /* DoctorFormModel.swift in Sources */,
 				89A4DF7D28DEE9B600D325BA /* HealthifyApp.swift in Sources */,
 				89A4DFB328DF7BFE00D325BA /* EventLogic.swift in Sources */,
 				423F8BD828DF27E900874A5D /* HomeView.swift in Sources */,
+				423F8BE528DF7D1200874A5D /* LottieView.swift in Sources */,
+				423F8BE728DF7D3E00874A5D /* AnimationView.swift in Sources */,
 				423F8BC928DEF40E00874A5D /* ARViewContainer.swift in Sources */,
-				423F8BE028DF354200874A5D /* SkeletonJoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,7 +315,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Healthify/Preview Content\"";
-				DEVELOPMENT_TEAM = 6F3A58SWMP;
+				DEVELOPMENT_TEAM = T76274KP97;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "TURN ON THE CAMERA!!!!!";
@@ -337,7 +345,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Healthify/Preview Content\"";
-				DEVELOPMENT_TEAM = 6F3A58SWMP;
+				DEVELOPMENT_TEAM = T76274KP97;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "TURN ON THE CAMERA!!!!!";
@@ -381,6 +389,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		423F8BE128DF7CC600874A5D /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		423F8BE228DF7CC600874A5D /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 423F8BE128DF7CC600874A5D /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 89A4DF7128DEE9B600D325BA /* Project object */;
 }

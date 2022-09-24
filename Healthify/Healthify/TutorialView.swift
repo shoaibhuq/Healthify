@@ -18,7 +18,8 @@ struct TutorialView: View {
             Text("sldafkjdslafkj")
             NavigationLink(destination:
                 ZStack {
-                    ARViewContainer()
+                    EmptyView()
+//                    ARViewContainer()
                         .edgesIgnoringSafeArea(.all)
                     Button("OFF") {
                         checkupPresented.toggle()

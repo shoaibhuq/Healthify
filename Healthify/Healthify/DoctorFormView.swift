@@ -13,33 +13,17 @@ struct DoctorFormView: View {
     @State var phoneNumber: String
     var body: some View {
         VStack {
-            Image
             
-            Text("Enter your first name:")
-            TextField("First Name", text: $firstName)
-            
-            Text("Enter your last name:")
-            TextField("Last Name", text: $lastName)
-            
-            Text("Enter your phone number")
-            TextField("Phone Number", text: $phoneNumber)
-            
-            Text("Enter your ")
-            
-            Button("Save") {
-                // user default the thing
-            }
-            Text
         }
     }
 }
 
 
 struct NameAgeForm: View {
-    @State var firstName: String
-    @State var lastName: String
-    @State var age: String
-    @State var patient = Patient()
+    @ObservedObject var patientVM = PatientFormViewModel()
+    @State var firstName: String = ""
+    @State var lastName: String = ""
+//    @State var age: String
     var body: some View {
         VStack {
             
@@ -48,39 +32,21 @@ struct NameAgeForm: View {
             
             Text("Enter your last name:")
             TextField("Last Name", text: $lastName)
-            
-            Text("Enter your age")
-            TextField("Age", text: $lastName)
-            
-            Button("Next"){
-                patient.firstName = firstName
-                patient.lastName = lastName
-                patient.age = age
-                
+        
+            NavigationLink(destination: PhoneNumberForm(patientVM: patientVM)) {
+                Text("Next")
             }
         }
     }
 }
 
 struct PhoneNumberForm: View {
-    @State var firstName: String
-    @State var lastName: String
-    @State var age: String
-    @State var patient: Patient
+    @ObservedObject var patientVM: PatientFormViewModel
+    @State var age: String = ""
+    @State var phoneNum: String = ""
     var body: some View {
         VStack {
-            
-            Text("Enter your first name:")
-            TextField("First Name", text: $firstName)
-            
-            Text("Enter your last name:")
-            TextField("Last Name", text: $lastName)
-            
-            Text("Enter your age:")
-            TextField("Age", text: $age)
-            
             Button("Next"){
-                patient
             }
         }
     }

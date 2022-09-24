@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		423F8BC928DEF40E00874A5D /* ARViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423F8BC828DEF40E00874A5D /* ARViewContainer.swift */; };
-		423F8BCB28DEF67300874A5D /* SkeletonJoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423F8BCA28DEF67300874A5D /* SkeletonJoint.swift */; };
-		423F8BCD28DEF69B00874A5D /* SkeletonBone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423F8BCC28DEF69B00874A5D /* SkeletonBone.swift */; };
-		423F8BCF28DEF72A00874A5D /* Bones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423F8BCE28DEF72A00874A5D /* Bones.swift */; };
-		423F8BD128DF00D900874A5D /* BodySkeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423F8BD028DF00D900874A5D /* BodySkeleton.swift */; };
 		423F8BD628DF274600874A5D /* character in Resources */ = {isa = PBXBuildFile; fileRef = 423F8BD528DF274600874A5D /* character */; };
 		423F8BD828DF27E900874A5D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423F8BD728DF27E900874A5D /* HomeView.swift */; };
+		423F8BDD28DF354200874A5D /* SkeletonBone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423F8BD928DF354100874A5D /* SkeletonBone.swift */; };
+		423F8BDE28DF354200874A5D /* BodySkeleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423F8BDA28DF354100874A5D /* BodySkeleton.swift */; };
+		423F8BDF28DF354200874A5D /* Bones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423F8BDB28DF354200874A5D /* Bones.swift */; };
+		423F8BE028DF354200874A5D /* SkeletonJoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423F8BDC28DF354200874A5D /* SkeletonJoint.swift */; };
 		89A4DF7D28DEE9B600D325BA /* HealthifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A4DF7C28DEE9B600D325BA /* HealthifyApp.swift */; };
 		89A4DF7F28DEE9B600D325BA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A4DF7E28DEE9B600D325BA /* ContentView.swift */; };
 		89A4DF8128DEE9B900D325BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89A4DF8028DEE9B900D325BA /* Assets.xcassets */; };
@@ -22,12 +22,12 @@
 
 /* Begin PBXFileReference section */
 		423F8BC828DEF40E00874A5D /* ARViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewContainer.swift; sourceTree = "<group>"; };
-		423F8BCA28DEF67300874A5D /* SkeletonJoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonJoint.swift; sourceTree = "<group>"; };
-		423F8BCC28DEF69B00874A5D /* SkeletonBone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonBone.swift; sourceTree = "<group>"; };
-		423F8BCE28DEF72A00874A5D /* Bones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bones.swift; sourceTree = "<group>"; };
-		423F8BD028DF00D900874A5D /* BodySkeleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodySkeleton.swift; sourceTree = "<group>"; };
 		423F8BD528DF274600874A5D /* character */ = {isa = PBXFileReference; lastKnownFileType = folder; path = character; sourceTree = "<group>"; };
 		423F8BD728DF27E900874A5D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		423F8BD928DF354100874A5D /* SkeletonBone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkeletonBone.swift; sourceTree = "<group>"; };
+		423F8BDA28DF354100874A5D /* BodySkeleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BodySkeleton.swift; sourceTree = "<group>"; };
+		423F8BDB28DF354200874A5D /* Bones.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bones.swift; sourceTree = "<group>"; };
+		423F8BDC28DF354200874A5D /* SkeletonJoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkeletonJoint.swift; sourceTree = "<group>"; };
 		89A4DF7928DEE9B600D325BA /* Healthify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Healthify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89A4DF7C28DEE9B600D325BA /* HealthifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthifyApp.swift; sourceTree = "<group>"; };
 		89A4DF7E28DEE9B600D325BA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -49,10 +49,6 @@
 		423F8BD228DF214D00874A5D /* Junk */ = {
 			isa = PBXGroup;
 			children = (
-				423F8BCA28DEF67300874A5D /* SkeletonJoint.swift */,
-				423F8BCC28DEF69B00874A5D /* SkeletonBone.swift */,
-				423F8BCE28DEF72A00874A5D /* Bones.swift */,
-				423F8BD028DF00D900874A5D /* BodySkeleton.swift */,
 			);
 			path = Junk;
 			sourceTree = "<group>";
@@ -80,6 +76,10 @@
 				89A4DF7E28DEE9B600D325BA /* ContentView.swift */,
 				423F8BD728DF27E900874A5D /* HomeView.swift */,
 				423F8BC828DEF40E00874A5D /* ARViewContainer.swift */,
+				423F8BDA28DF354100874A5D /* BodySkeleton.swift */,
+				423F8BDB28DF354200874A5D /* Bones.swift */,
+				423F8BD928DF354100874A5D /* SkeletonBone.swift */,
+				423F8BDC28DF354200874A5D /* SkeletonJoint.swift */,
 				423F8BD528DF274600874A5D /* character */,
 				423F8BD228DF214D00874A5D /* Junk */,
 				89A4DF8028DEE9B900D325BA /* Assets.xcassets */,
@@ -167,14 +167,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				423F8BD128DF00D900874A5D /* BodySkeleton.swift in Sources */,
 				89A4DF7F28DEE9B600D325BA /* ContentView.swift in Sources */,
-				423F8BCF28DEF72A00874A5D /* Bones.swift in Sources */,
-				423F8BCD28DEF69B00874A5D /* SkeletonBone.swift in Sources */,
+				423F8BDD28DF354200874A5D /* SkeletonBone.swift in Sources */,
+				423F8BDE28DF354200874A5D /* BodySkeleton.swift in Sources */,
+				423F8BDF28DF354200874A5D /* Bones.swift in Sources */,
 				89A4DF7D28DEE9B600D325BA /* HealthifyApp.swift in Sources */,
 				423F8BD828DF27E900874A5D /* HomeView.swift in Sources */,
 				423F8BC928DEF40E00874A5D /* ARViewContainer.swift in Sources */,
-				423F8BCB28DEF67300874A5D /* SkeletonJoint.swift in Sources */,
+				423F8BE028DF354200874A5D /* SkeletonJoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

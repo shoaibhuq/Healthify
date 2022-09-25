@@ -41,7 +41,7 @@ struct PainView: View {
                 
             }
             if (eventCount < 1) {
-                NavigationLink(destination: ARViewContainer(), label: {
+                NavigationLink(destination: GuidanceView2(), label: {
                     RoundedRectangle(cornerRadius: 15)
                         .foregroundColor(Color(red: 0.78, green: 0.95, blue: 1))
                         .overlay(Text("Continue?").font(.title))
@@ -49,7 +49,7 @@ struct PainView: View {
                         .padding()
                 })
                 
-                NavigationLink(destination: PainView(), label: {
+                NavigationLink(destination: HomeScreenView(patient: Patient()), label: {
                     RoundedRectangle(cornerRadius: 15)
                         .foregroundColor(.healthOrange)
                         .overlay(Text("Exit").font(.title))

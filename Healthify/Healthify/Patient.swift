@@ -13,6 +13,12 @@ struct Patient:Codable {
     
     var firstName:String = ""
     var lastName:String = ""
-    var age: String = ""
+    var age: Int = 0
+    var height: Int = 0
+    var phoneNumber: String = ""
+    var email: String = ""
+    
+    var primaryPhysician: String = ""
+    var physicianEmail: String = ""
     
 }

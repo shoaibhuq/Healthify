@@ -13,7 +13,7 @@
 		423F8BE328DF7CC600874A5D /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 423F8BE228DF7CC600874A5D /* Lottie */; };
 		423F8BE528DF7D1200874A5D /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423F8BE428DF7D1200874A5D /* LottieView.swift */; };
 		423F8BE728DF7D3E00874A5D /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423F8BE628DF7D3E00874A5D /* TutorialView.swift */; };
-		423F8BE928DF7F4600874A5D /* DoctorFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423F8BE828DF7F4600874A5D /* DoctorFormView.swift */; };
+		423F8BE928DF7F4600874A5D /* PatientFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423F8BE828DF7F4600874A5D /* PatientFormView.swift */; };
 		423F8BEB28DF7F5700874A5D /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423F8BEA28DF7F5700874A5D /* Patient.swift */; };
 		423F8BED28DF81B600874A5D /* lottie.json in Resources */ = {isa = PBXBuildFile; fileRef = 423F8BEC28DF81B600874A5D /* lottie.json */; };
 		423F8BEF28DF8A7200874A5D /* GifView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423F8BEE28DF8A7200874A5D /* GifView.swift */; };
@@ -21,6 +21,7 @@
 		423F8BF328DF97BD00874A5D /* PatientFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423F8BF228DF97BD00874A5D /* PatientFormViewModel.swift */; };
 		423F8BF528DFAD6C00874A5D /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423F8BF428DFAD6C00874A5D /* SwiftUIView.swift */; };
 		423F8BF728DFB32C00874A5D /* Color+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423F8BF628DFB32C00874A5D /* Color+Custom.swift */; };
+		423F8BF928DFCB3A00874A5D /* TextFieldStyle+RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423F8BF828DFCB3A00874A5D /* TextFieldStyle+RoundedCorner.swift */; };
 		89A4DF7D28DEE9B600D325BA /* HealthifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A4DF7C28DEE9B600D325BA /* HealthifyApp.swift */; };
 		89A4DF7F28DEE9B600D325BA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A4DF7E28DEE9B600D325BA /* ContentView.swift */; };
 		89A4DF8128DEE9B900D325BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89A4DF8028DEE9B900D325BA /* Assets.xcassets */; };
@@ -34,7 +35,7 @@
 		423F8BD728DF27E900874A5D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		423F8BE428DF7D1200874A5D /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		423F8BE628DF7D3E00874A5D /* TutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
-		423F8BE828DF7F4600874A5D /* DoctorFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoctorFormView.swift; sourceTree = "<group>"; };
+		423F8BE828DF7F4600874A5D /* PatientFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientFormView.swift; sourceTree = "<group>"; };
 		423F8BEA28DF7F5700874A5D /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
 		423F8BEC28DF81B600874A5D /* lottie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie.json; sourceTree = "<group>"; };
 		423F8BEE28DF8A7200874A5D /* GifView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifView.swift; sourceTree = "<group>"; };
@@ -42,6 +43,7 @@
 		423F8BF228DF97BD00874A5D /* PatientFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientFormViewModel.swift; sourceTree = "<group>"; };
 		423F8BF428DFAD6C00874A5D /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		423F8BF628DFB32C00874A5D /* Color+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Custom.swift"; sourceTree = "<group>"; };
+		423F8BF828DFCB3A00874A5D /* TextFieldStyle+RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextFieldStyle+RoundedCorner.swift"; sourceTree = "<group>"; };
 		89A4DF7928DEE9B600D325BA /* Healthify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Healthify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89A4DF7C28DEE9B600D325BA /* HealthifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthifyApp.swift; sourceTree = "<group>"; };
 		89A4DF7E28DEE9B600D325BA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -88,13 +90,15 @@
 		89A4DF7B28DEE9B600D325BA /* Healthify */ = {
 			isa = PBXGroup;
 			children = (
+				89A4DF8028DEE9B900D325BA /* Assets.xcassets */,
 				89A4DF7C28DEE9B600D325BA /* HealthifyApp.swift */,
 				89A4DF7E28DEE9B600D325BA /* ContentView.swift */,
 				423F8BF628DFB32C00874A5D /* Color+Custom.swift */,
+				423F8BF828DFCB3A00874A5D /* TextFieldStyle+RoundedCorner.swift */,
 				423F8BD728DF27E900874A5D /* HomeView.swift */,
 				423F8BF428DFAD6C00874A5D /* SwiftUIView.swift */,
 				423F8BEE28DF8A7200874A5D /* GifView.swift */,
-				423F8BE828DF7F4600874A5D /* DoctorFormView.swift */,
+				423F8BE828DF7F4600874A5D /* PatientFormView.swift */,
 				423F8BF228DF97BD00874A5D /* PatientFormViewModel.swift */,
 				423F8BEA28DF7F5700874A5D /* Patient.swift */,
 				423F8BE628DF7D3E00874A5D /* TutorialView.swift */,
@@ -105,7 +109,6 @@
 				423F8BEC28DF81B600874A5D /* lottie.json */,
 				423F8BD528DF274600874A5D /* character */,
 				423F8BD228DF214D00874A5D /* Junk */,
-				89A4DF8028DEE9B900D325BA /* Assets.xcassets */,
 				89A4DF8228DEE9B900D325BA /* Preview Content */,
 			);
 			path = Healthify;
@@ -201,9 +204,10 @@
 				89A4DF7F28DEE9B600D325BA /* ContentView.swift in Sources */,
 				423F8BF328DF97BD00874A5D /* PatientFormViewModel.swift in Sources */,
 				423F8BF528DFAD6C00874A5D /* SwiftUIView.swift in Sources */,
-				423F8BE928DF7F4600874A5D /* DoctorFormView.swift in Sources */,
+				423F8BE928DF7F4600874A5D /* PatientFormView.swift in Sources */,
 				423F8BF728DFB32C00874A5D /* Color+Custom.swift in Sources */,
 				423F8BEB28DF7F5700874A5D /* Patient.swift in Sources */,
+				423F8BF928DFCB3A00874A5D /* TextFieldStyle+RoundedCorner.swift in Sources */,
 				89A4DF7D28DEE9B600D325BA /* HealthifyApp.swift in Sources */,
 				89A4DFB328DF7BFE00D325BA /* EventLogic.swift in Sources */,
 				423F8BEF28DF8A7200874A5D /* GifView.swift in Sources */,

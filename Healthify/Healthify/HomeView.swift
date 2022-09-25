@@ -31,13 +31,13 @@ struct HomeView: View {
                         gradient: Gradient(stops: [
                     .init(color: Color(#colorLiteral(red: 0.3137255012989044, green: 0.6980392336845398, blue: 0.7529411911964417, alpha: 1)), location: 0),
                     .init(color: Color(#colorLiteral(red: 0, green: 0.6015625, blue: 0.6875, alpha: 1)), location: 1)]),
-                        startPoint: UnitPoint(x: 0.5, y:0),
-                        endPoint: UnitPoint(x: 0.5, y: 1)))
+                        startPoint: .topTrailing,
+                        endPoint: .bottomLeading))
                 .frame(width: 765, height: 624)
                 .offset(x: -50, y: 450)
             VStack {
                 Spacer()
-                Image("icon")
+                Image("skull")
                     .resizable()
                     .frame(width: 200, height: 200)
                 Text("HEALTHIFY")
@@ -52,7 +52,6 @@ struct HomeView: View {
                         .foregroundColor(Color.healthOrange)
                         .overlay(content: { Text("Register").font(.title).foregroundColor(.black) })
                 })
-                
                 NavigationLink(destination: TutorialView(), label: {
                     RoundedRectangle(cornerRadius: 10)
                         .frame(width: 200, height: 74)

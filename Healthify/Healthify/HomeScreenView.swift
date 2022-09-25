@@ -33,7 +33,7 @@ struct HomeScreenView: View {
                     .font(.footnote)
                     .padding()
                 HStack {
-                    NavigationLink(destination: EmptyView(),
+                    NavigationLink(destination: TutorialView(),
                                    label: { Image("startCheckup")
                             .resizable()
                             .frame(width: 136, height: 142)

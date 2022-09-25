@@ -29,9 +29,9 @@ struct PainView: View {
 //                Text("How much pain did you feel?")
 //                    .font(.title)
 //                    .padding()
-                Picker("How much pain did you feel?", selection: $painArea) {
+                Picker("How much pain did you feel?", selection: $painLevel) {
                     ForEach(1...10, id: \.self) {
-                        Text("\($0)")
+                        Text("\($0)").tag($0)
                     }
                 }
                 

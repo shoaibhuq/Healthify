@@ -29,7 +29,7 @@ struct GuidanceView: View {
                 print("ASLDKJ")
                 soundFlag = true
                 arVM.transition = false
-                goToPain = true
+                goToPain = true 
             }
         })
     }

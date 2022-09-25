@@ -287,7 +287,7 @@ struct PhysicianForm: View {
                         .overlay(content: { Text("Next").font(.title).foregroundColor(.black) })
                         .padding(32)
                 })
-                NavigationLink(destination: PhoneEmailForm(patientVM: patientVM), isActive: $moveNext, label: {EmptyView()} )
+                NavigationLink(destination: HomeScreenView(patient: patientVM.patient), isActive: $moveNext, label: {EmptyView()} )
             }
         }
     }

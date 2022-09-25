@@ -28,6 +28,7 @@
 		423F8C0528E0105600874A5D /* ARContainerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423F8C0428E0105600874A5D /* ARContainerModel.swift */; };
 		423F8C0728E0206A00874A5D /* PainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423F8C0628E0206900874A5D /* PainView.swift */; };
 		423F8C0928E02D7C00874A5D /* GuidanceView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423F8C0828E02D7C00874A5D /* GuidanceView2.swift */; };
+		423F8C0B28E03D3F00874A5D /* ArmSwing_fixed.gif in Resources */ = {isa = PBXBuildFile; fileRef = 423F8C0A28E03D3F00874A5D /* ArmSwing_fixed.gif */; };
 		89A4DF7D28DEE9B600D325BA /* HealthifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A4DF7C28DEE9B600D325BA /* HealthifyApp.swift */; };
 		89A4DF7F28DEE9B600D325BA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A4DF7E28DEE9B600D325BA /* ContentView.swift */; };
 		89A4DF8128DEE9B900D325BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89A4DF8028DEE9B900D325BA /* Assets.xcassets */; };
@@ -56,6 +57,7 @@
 		423F8C0428E0105600874A5D /* ARContainerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARContainerModel.swift; sourceTree = "<group>"; };
 		423F8C0628E0206900874A5D /* PainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PainView.swift; sourceTree = "<group>"; };
 		423F8C0828E02D7C00874A5D /* GuidanceView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidanceView2.swift; sourceTree = "<group>"; };
+		423F8C0A28E03D3F00874A5D /* ArmSwing_fixed.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ArmSwing_fixed.gif; sourceTree = "<group>"; };
 		89A4DF7928DEE9B600D325BA /* Healthify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Healthify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89A4DF7C28DEE9B600D325BA /* HealthifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthifyApp.swift; sourceTree = "<group>"; };
 		89A4DF7E28DEE9B600D325BA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				423F8C0828E02D7C00874A5D /* GuidanceView2.swift */,
 				423F8C0628E0206900874A5D /* PainView.swift */,
 				423F8C0228E00D8600874A5D /* Squat_side_fixed.gif */,
+				423F8C0A28E03D3F00874A5D /* ArmSwing_fixed.gif */,
 				423F8BF028DF8CBB00874A5D /* ThuNha.gif */,
 				423F8BC828DEF40E00874A5D /* ARViewContainer.swift */,
 				89A4DFB228DF7BFE00D325BA /* EventLogic.swift */,
@@ -206,6 +209,7 @@
 			files = (
 				423F8BED28DF81B600874A5D /* lottie.json in Resources */,
 				423F8BD628DF274600874A5D /* character in Resources */,
+				423F8C0B28E03D3F00874A5D /* ArmSwing_fixed.gif in Resources */,
 				423F8BF128DF8CBB00874A5D /* ThuNha.gif in Resources */,
 				89A4DF8428DEE9B900D325BA /* Preview Assets.xcassets in Resources */,
 				423F8C0328E00D8600874A5D /* Squat_side_fixed.gif in Resources */,

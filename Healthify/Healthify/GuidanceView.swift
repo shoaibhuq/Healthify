@@ -14,12 +14,14 @@ struct GuidanceView: View {
         VStack {
             ARViewContainer()
             HStack {
-                GifImage("ThuNha")
+                GifImage("ArmSwing_fixed")
                 VStack {
                     Text("Shoulder Mobility Test")
-                    RoundedRectangle(cornerRadius: 10)
-                        .frame(width: 146, height: 56)
-                        .foregroundColor(.healthOrange)
+                    Button(action: { goToPain = true }) {
+                        RoundedRectangle(cornerRadius: 10)
+                            .frame(width: 146, height: 56)
+                            .foregroundColor(.healthOrange)
+                    }
                 }
             }
             NavigationLink(destination: DidFeelPain(), isActive: $goToPain, label: { Text("") })

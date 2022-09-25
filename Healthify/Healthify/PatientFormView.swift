@@ -295,6 +295,7 @@ struct PhysicianForm: View {
                     patientVM.patient.physicianName = physicianName
                     patientVM.patient.physicianEmail = physicianEmail
                     patientVM.save()
+                    print("DEBUG: \(patientVM.patient.firstName)")
                     moveNext = true
                 }, label: {
                     RoundedRectangle(cornerRadius: 10)

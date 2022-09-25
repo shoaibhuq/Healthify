@@ -16,7 +16,6 @@ struct GuidanceView: View {
                 .frame(minHeight: 500)
             HStack {
                 GifImage("ArmSwing_fixed")
-                    .frame(minHeight: 700)
                 VStack {
                     Spacer()
                     Text("Shoulder Mobility Test")

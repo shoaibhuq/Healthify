@@ -22,7 +22,7 @@ struct HomeScreenView: View {
                     VStack(alignment: .leading, spacing: 0){
                         Text("Good morning,")
                             .font(Font.custom("Nunito-SemiBold", size: 32))
-                        Text("\(firstName.text)!")
+                        Text("\(patient.firstName)!")
                             .font(Font.custom("Nunito-SemiBold", size: 32))
                     }
 
@@ -76,12 +76,6 @@ struct HomeScreenView: View {
                     .padding(.horizontal, 24)
             }
         }
-    }
-    
-    init(patient: Patient) {
-        self.patient = patient
-//        eventCount = 0
-//        arContainerModel.transition = false
     }
 }
 

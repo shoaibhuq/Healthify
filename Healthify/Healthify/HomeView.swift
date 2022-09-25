@@ -10,6 +10,7 @@ import Lottie
 
 struct HomeView: View {
     @State var checkupPresented = false
+    
     var body: some View {
         ZStack {
             Color.healthCream
@@ -54,7 +55,7 @@ struct HomeView: View {
                         .foregroundColor(Color.healthOrange)
                         .overlay(content: { Text("Register").font(Font.custom("Nunito-Regular", size: 32)).foregroundColor(.black) })
                 })
-                NavigationLink(destination: HomeScreenView(patient: Patient()), label: {
+                NavigationLink(destination: HomeScreenView(patient: PatientFormViewModel().patient), label: {
                     RoundedRectangle(cornerRadius: 10)
                         .frame(width: 200, height: 74)
                         .foregroundColor(Color(UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1)))

@@ -99,6 +99,8 @@ extension ARView: ARSessionDelegate {
                         soundFlag = false
                         eventCount = 2
                         arContainerModel.transition = true
+                        session.pause()
+
                     }
                 }
             }

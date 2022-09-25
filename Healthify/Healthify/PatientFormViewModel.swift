@@ -11,9 +11,17 @@ class PatientFormViewModel: ObservableObject {
     @Published var patient = Patient()
     
     init() {
-        
+        if let data = UserDefaults.standard.data(forKey: "Patient") {
+            if let decoded = try? JSONDecoder().decode(Patient.self, from: data) {
+                patient = decoded
+                return
+            }
+        }
+        patient = Patient()
     }
     func save() {
-//    save to user default
+        if let encoded = try? JSONEncoder().encode(patient) {
+            UserDefaults.standard.set(encoded, forKey: "Patient")
+        }
     }
 }

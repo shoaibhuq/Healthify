@@ -15,6 +15,7 @@ struct GuidanceView: View {
             ARViewContainer()
             HStack {
                 GifImage("ArmSwing_fixed")
+                    .frame(minHeight: 700)
                 VStack {
                     Text("Shoulder Mobility Test")
                     Button(action: { goToPain = true }) {

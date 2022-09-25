@@ -13,17 +13,26 @@ struct GuidanceView: View {
     var body: some View {
         VStack {
             ARViewContainer()
+                .frame(minHeight: 500)
             HStack {
                 GifImage("ArmSwing_fixed")
                 VStack {
+                    Spacer()
                     Text("Shoulder Mobility Test")
-                    Button(action: { goToPain = true }) {
+                        .padding()
+                    Button(action: {
+                        eventCount = 1
+                        goToPain = true
+                    }) {
                         RoundedRectangle(cornerRadius: 10)
                             .frame(width: 146, height: 56)
                             .foregroundColor(.healthOrange)
+                            .overlay(Text("I feel pain"))
+                            .padding()
                     }
                 }
             }
+            .frame(height: 200)
             NavigationLink(destination: DidFeelPain(), isActive: $goToPain, label: { Text("") })
         }
         .onChange(of: arVM.transition, perform: { _ in

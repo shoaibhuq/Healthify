@@ -79,25 +79,29 @@ extension ARView: ARSessionDelegate {
             characterAnchor.orientation = Transform(matrix: bodyAnchor.transform).rotation
             
             
-            if (eventController.shoulderRotation(bodyAnchor) == 1){
-                if (soundFlag){
-                    AudioServicesPlaySystemSound(1026)
-                    print("DEBUG: PLAYED SOUND")
-                    soundFlag = false
-                    eventCount += 1
-                    arContainerModel.transition = true
+            if eventCount == 0 {
+                if (eventController.shoulderRotation(bodyAnchor) == 1){
+                    if (soundFlag){
+                        AudioServicesPlaySystemSound(1026)
+                        print("DEBUG: PLAYED SOUND")
+                        soundFlag = false
+                        eventCount += 1
+                        arContainerModel.transition = true
+                    }
+                }
+                
+            } else if eventCount == 1 {
+                if (eventController.squat(bodyAnchor) == 1){
+                    if (soundFlag){
+                        AudioServicesPlaySystemSound(1026)
+                        print("DEBUG: PLAYED SOUND")
+                        soundFlag = false
+                        eventCount += 1
+                        arContainerModel.transition = true
+                    }
                 }
             }
             
-            if (eventController.squat(bodyAnchor) == 1){
-                if (soundFlag){
-                    AudioServicesPlaySystemSound(1026)
-                    print("DEBUG: PLAYED SOUND")
-                    soundFlag = false
-                    eventCount += 1
-                    arContainerModel.transition = true
-                }
-            }
 
             if let character = character, character.parent == nil {
                 // Attach the character to its anchor as soon as

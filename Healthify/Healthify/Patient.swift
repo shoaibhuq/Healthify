@@ -18,7 +18,7 @@ struct Patient:Codable {
     var phoneNumber: String = ""
     var email: String = ""
     
-    var primaryPhysician: String = ""
+    var physicianName: String = ""
     var physicianEmail: String = ""
     
 }

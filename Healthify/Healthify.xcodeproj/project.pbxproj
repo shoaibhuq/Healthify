@@ -22,6 +22,7 @@
 		423F8BF528DFAD6C00874A5D /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423F8BF428DFAD6C00874A5D /* SwiftUIView.swift */; };
 		423F8BF728DFB32C00874A5D /* Color+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423F8BF628DFB32C00874A5D /* Color+Custom.swift */; };
 		423F8BF928DFCB3A00874A5D /* TextFieldStyle+RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423F8BF828DFCB3A00874A5D /* TextFieldStyle+RoundedCorner.swift */; };
+		423F8BFB28DFF45900874A5D /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423F8BFA28DFF45900874A5D /* HomeScreenView.swift */; };
 		89A4DF7D28DEE9B600D325BA /* HealthifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A4DF7C28DEE9B600D325BA /* HealthifyApp.swift */; };
 		89A4DF7F28DEE9B600D325BA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A4DF7E28DEE9B600D325BA /* ContentView.swift */; };
 		89A4DF8128DEE9B900D325BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89A4DF8028DEE9B900D325BA /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 		423F8BF428DFAD6C00874A5D /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 		423F8BF628DFB32C00874A5D /* Color+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Custom.swift"; sourceTree = "<group>"; };
 		423F8BF828DFCB3A00874A5D /* TextFieldStyle+RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TextFieldStyle+RoundedCorner.swift"; sourceTree = "<group>"; };
+		423F8BFA28DFF45900874A5D /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
 		89A4DF7928DEE9B600D325BA /* Healthify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Healthify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89A4DF7C28DEE9B600D325BA /* HealthifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthifyApp.swift; sourceTree = "<group>"; };
 		89A4DF7E28DEE9B600D325BA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				423F8BF428DFAD6C00874A5D /* SwiftUIView.swift */,
 				423F8BEE28DF8A7200874A5D /* GifView.swift */,
 				423F8BE828DF7F4600874A5D /* PatientFormView.swift */,
+				423F8BFA28DFF45900874A5D /* HomeScreenView.swift */,
 				423F8BF228DF97BD00874A5D /* PatientFormViewModel.swift */,
 				423F8BEA28DF7F5700874A5D /* Patient.swift */,
 				423F8BE628DF7D3E00874A5D /* TutorialView.swift */,
@@ -213,6 +216,7 @@
 				423F8BEF28DF8A7200874A5D /* GifView.swift in Sources */,
 				423F8BD828DF27E900874A5D /* HomeView.swift in Sources */,
 				423F8BE528DF7D1200874A5D /* LottieView.swift in Sources */,
+				423F8BFB28DFF45900874A5D /* HomeScreenView.swift in Sources */,
 				423F8BE728DF7D3E00874A5D /* TutorialView.swift in Sources */,
 				423F8BC928DEF40E00874A5D /* ARViewContainer.swift in Sources */,
 			);

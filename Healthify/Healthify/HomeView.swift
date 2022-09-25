@@ -46,7 +46,7 @@ struct HomeView: View {
                 
                 Spacer()
                 
-                NavigationLink(destination: TutorialView(), label: {
+                NavigationLink(destination: NameAgeForm(), label: {
                     RoundedRectangle(cornerRadius: 10)
                         .frame(width: 250, height: 74)
                         .foregroundColor(Color.healthOrange)

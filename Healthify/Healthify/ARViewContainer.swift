@@ -85,8 +85,9 @@ extension ARView: ARSessionDelegate {
                         AudioServicesPlaySystemSound(1026)
                         print("DEBUG: PLAYED SOUND")
                         soundFlag = false
-                        eventCount += 1
+                        eventCount = 1
                         arContainerModel.transition = true
+                        session.pause()
                     }
                 }
                 
@@ -96,7 +97,7 @@ extension ARView: ARSessionDelegate {
                         AudioServicesPlaySystemSound(1026)
                         print("DEBUG: PLAYED SOUND")
                         soundFlag = false
-                        eventCount += 1
+                        eventCount = 2
                         arContainerModel.transition = true
                     }
                 }

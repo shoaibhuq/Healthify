@@ -79,8 +79,8 @@ struct HomeScreenView: View {
     
     init(patient: Patient) {
         self.patient = patient
-        eventCount = 0
-        arContainerModel.transition = false
+//        eventCount = 0
+//        arContainerModel.transition = false
     }
 }
 

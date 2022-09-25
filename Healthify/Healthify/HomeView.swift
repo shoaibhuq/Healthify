@@ -52,7 +52,7 @@ struct HomeView: View {
                         .foregroundColor(Color.healthOrange)
                         .overlay(content: { Text("Register").font(.title).foregroundColor(.black) })
                 })
-                NavigationLink(destination: TutorialView(), label: {
+                NavigationLink(destination: HomeScreenView(patient: Patient()), label: {
                     RoundedRectangle(cornerRadius: 10)
                         .frame(width: 200, height: 74)
                         .foregroundColor(Color(UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1)))

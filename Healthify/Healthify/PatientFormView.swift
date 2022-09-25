@@ -93,6 +93,8 @@ struct NameAgeForm: View {
                 .padding(.horizontal, 16)
                 TextField("First name", text: $firstName)
                     .textFieldStyle(RoundedCornerTextFieldStyle())
+                    .keyboardType(.namePhonePad)
+                    .textContentType(.givenName)
                     .padding()
                 
                 HStack {
@@ -103,6 +105,8 @@ struct NameAgeForm: View {
                 .padding(.horizontal, 16)
                 TextField("Last name", text: $lastName)
                     .textFieldStyle(RoundedCornerTextFieldStyle())
+                    .keyboardType(.namePhonePad)
+                    .textContentType(.familyName)
                     .padding()
                 
                 Button(action: {
@@ -136,7 +140,7 @@ struct AgeHeightForm: View {
                     .font(Font.custom("Nunito-Regular", size: 32))
                     .padding(16)
                 Spacer()
-                Image("businessCard")
+                Image("speedometer")
                     .resizable()
                     .frame(width: 218, height: 218)
                 Spacer()
@@ -149,16 +153,18 @@ struct AgeHeightForm: View {
                 .padding(.horizontal, 16)
                 TextField("Age", value: $age, format: .number)
                     .textFieldStyle(RoundedCornerTextFieldStyle())
+                    .keyboardType(.numberPad)
                     .padding()
                 HStack {
-                    Text("Height")
+                    Text("Height (cm)")
                         .font(Font.custom("Nunito-Regular", size: 28))
                     Spacer()
                 }
                 .padding(.horizontal, 16)
                 
-                TextField("Height", value: $height, format: .number)
+                TextField("Height (cm)", value: $height, format: .number)
                     .textFieldStyle(RoundedCornerTextFieldStyle())
+                    .keyboardType(.numberPad)
                     .padding()
                 
                 
@@ -193,7 +199,7 @@ struct PhoneEmailForm: View {
                     .font(Font.custom("Nunito-Regular", size: 32))
                     .padding(16)
                 Spacer()
-                Image("businessCard")
+                Image("call")
                     .resizable()
                     .frame(width: 218, height: 218)
                 Spacer()
@@ -206,6 +212,8 @@ struct PhoneEmailForm: View {
                 .padding(.horizontal, 16)
                 TextField("Phone Number", text: $phoneNumber)
                     .textFieldStyle(RoundedCornerTextFieldStyle())
+                    .textContentType(.telephoneNumber)
+                    .keyboardType(.phonePad)
                     .padding()
 
                 HStack {
@@ -216,6 +224,8 @@ struct PhoneEmailForm: View {
                 .padding(.horizontal, 16)
                 TextField("personal@domain.com", text: $email)
                     .textFieldStyle(RoundedCornerTextFieldStyle())
+                    .keyboardType(.emailAddress)
+                    .textContentType(.emailAddress)
                     .padding()
                 
                 Button(action: {
@@ -250,7 +260,7 @@ struct PhysicianForm: View {
                     .font(Font.custom("Nunito-Regular", size: 32))
                     .padding(16)
                 Spacer()
-                Image("businessCard")
+                Image("heart")
                     .resizable()
                     .frame(width: 218, height: 218)
                 Spacer()
@@ -263,6 +273,8 @@ struct PhysicianForm: View {
                 .padding(.horizontal, 16)
                 TextField("First / Last name", text: $physicianName)
                     .textFieldStyle(RoundedCornerTextFieldStyle())
+                    .textContentType(.name)
+                    .keyboardType(.namePhonePad)
                     .padding()
 
                 HStack {
@@ -273,6 +285,8 @@ struct PhysicianForm: View {
                 .padding(.horizontal, 16)
                 TextField("physician@domain.com", text: $physicianEmail)
                     .textFieldStyle(RoundedCornerTextFieldStyle())
+                    .keyboardType(.emailAddress)
+                    .textContentType(.emailAddress)
                     .padding()
                 
                 Button(action: {
@@ -287,7 +301,7 @@ struct PhysicianForm: View {
                         .overlay(content: { Text("Next").font(Font.custom("Nunito-Regular", size: 32)).foregroundColor(.black) })
                         .padding(32)
                 })
-                NavigationLink(destination: HomeScreenView(patient: patientVM.patient), isActive: $moveNext, label: {EmptyView()} )
+                NavigationLink(destination: HomeScreenView(patient: patientVM.patient).navigationBarBackButtonHidden(true), isActive: $moveNext, label: {EmptyView()} )
             }
         }
     }

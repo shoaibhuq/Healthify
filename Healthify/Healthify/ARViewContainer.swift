@@ -10,10 +10,14 @@ import ARKit
 import RealityKit
 import SwiftUI
 import Combine
+import AVFoundation
 
 var character: BodyTrackedEntity?
 let characterAnchor = AnchorEntity()
 let characterOffset: SIMD3<Float> = [-1.0, 0, 0] // Offset the character by one meter to the left
+let eventController = EventLogic()
+var soundFlag: Bool = true
+
 
 struct ARViewContainer: UIViewRepresentable {
 
@@ -61,6 +65,9 @@ extension ARView: ARSessionDelegate {
     public func session(_ session: ARSession, didUpdate anchors: [ARAnchor]) {
         for anchor in anchors {
             guard let bodyAnchor = anchor as? ARBodyAnchor else { continue }
+            
+            let group = DispatchGroup()
+            group.enter()
 
             // Update the position of the character anchor's position.
             let bodyPosition = simd_make_float3(bodyAnchor.transform.columns.3)
@@ -68,7 +75,16 @@ extension ARView: ARSessionDelegate {
             // Also copy over the rotation of the body anchor, because the skeleton's pose
             // in the world is relative to the body anchor's rotation.
             characterAnchor.orientation = Transform(matrix: bodyAnchor.transform).rotation
-
+            
+            
+            if (eventController.shoulderRotation(bodyAnchor) == 1){
+                if (soundFlag){
+                    AudioServicesPlaySystemSound(1026)
+                    print("DEBUG: PLAYED SOUND")
+                    soundFlag = false
+                }
+                
+            }
             if let character = character, character.parent == nil {
                 // Attach the character to its anchor as soon as
                 // 1. the body anchor was detected and

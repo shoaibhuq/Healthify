@@ -22,7 +22,13 @@ struct GuidanceView: View {
                 }
             }
         }
-        .onChange(of: arVM.transition, perform: { _ in print("ASLDKJ") })
+        .onChange(of: arVM.transition, perform: { _ in
+            if arVM.transition == true {
+                print("ASLDKJ")
+                soundFlag = true
+                arVM.transition = false
+            }
+        })
     }
 
 }

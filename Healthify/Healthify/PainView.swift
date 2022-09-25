@@ -10,34 +10,38 @@ import SwiftUI
 struct PainView: View {
     @State var painArea = ""
     @State var painLevel = 0
+    @State var problem = ""
     var body: some View {
         VStack {
             List {
-                Text("Where did you feel the pain?")
-                    .font(.title)
-                Picker("Pain in", selection: $painArea) {
+//                Text("Where did you feel the pain?")
+//                    .font(.title)
+                Picker("Where did you feel the pain?", selection: $painArea) {
                     Text("Shoulder").tag("Shoulder")
                     Text("Chest").tag("Chest")
                     Text("Forearm").tag("Forearm")
                     Text("Lower back").tag("Lower back")
                     Text("Hip").tag("Hip")
                 }
-                .padding()
+//                .padding()
                 
                 
-                Text("How much pain did you feel?")
-                    .font(.title)
-                    .padding()
-                Picker("Pain scale", selection: $painArea) {
+//                Text("How much pain did you feel?")
+//                    .font(.title)
+//                    .padding()
+                Picker("How much pain did you feel?", selection: $painArea) {
                     ForEach(1...10, id: \.self) {
                         Text("\($0)")
                     }
                 }
                 
+                TextField("Any other problem:", text: $problem)
+                    .lineLimit(0)
+                
                 
             }
             
-            NavigationLink(destination: PainView(), label: {
+            NavigationLink(destination: ARViewContainer(), label: {
                 RoundedRectangle(cornerRadius: 15)
                     .foregroundColor(Color(red: 0.78, green: 0.95, blue: 1))
                     .overlay(Text("Continue?").font(.title))
@@ -67,7 +71,7 @@ struct DidFeelPain: View {
                     .overlay(Text("Yes").font(.title))
             })
             
-            NavigationLink(destination: PainView(), label: {
+            NavigationLink(destination: ARViewContainer(), label: {
                 RoundedRectangle(cornerRadius: 15)
                     .foregroundColor(Color(red: 0.78, green: 0.95, blue: 1))
                     .overlay(Text("No").font(.title))

@@ -18,6 +18,7 @@ let characterOffset: SIMD3<Float> = [-1.0, 0, 0] // Offset the character by one 
 let eventController = EventLogic()
 var soundFlag: Bool = true
 var arContainerModel = ARContainerModel()
+var eventCount = 0
 
 
 struct ARViewContainer: UIViewRepresentable {
@@ -83,10 +84,21 @@ extension ARView: ARSessionDelegate {
                     AudioServicesPlaySystemSound(1026)
                     print("DEBUG: PLAYED SOUND")
                     soundFlag = false
+                    eventCount += 1
                     arContainerModel.transition = true
                 }
-                
             }
+            
+            if (eventController.squat(bodyAnchor) == 1){
+                if (soundFlag){
+                    AudioServicesPlaySystemSound(1026)
+                    print("DEBUG: PLAYED SOUND")
+                    soundFlag = false
+                    eventCount += 1
+                    arContainerModel.transition = true
+                }
+            }
+
             if let character = character, character.parent == nil {
                 // Attach the character to its anchor as soon as
                 // 1. the body anchor was detected and

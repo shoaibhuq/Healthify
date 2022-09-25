@@ -40,25 +40,35 @@ struct PainView: View {
                 
                 
             }
-            
-            NavigationLink(destination: ARViewContainer(), label: {
-                RoundedRectangle(cornerRadius: 15)
-                    .foregroundColor(Color(red: 0.78, green: 0.95, blue: 1))
-                    .overlay(Text("Continue?").font(.title))
-                    .frame(width: 196, height: 84)
-                    .padding()
-            })
-            
-            NavigationLink(destination: PainView(), label: {
-                RoundedRectangle(cornerRadius: 15)
-                    .foregroundColor(.healthOrange)
-                    .overlay(Text("Exit").font(.title))
-                    .frame(width: 196, height: 84)
-                    .padding()
-            })
+            if (eventCount < 1) {
+                NavigationLink(destination: ARViewContainer(), label: {
+                    RoundedRectangle(cornerRadius: 15)
+                        .foregroundColor(Color(red: 0.78, green: 0.95, blue: 1))
+                        .overlay(Text("Continue?").font(.title))
+                        .frame(width: 196, height: 84)
+                        .padding()
+                })
+                
+                NavigationLink(destination: PainView(), label: {
+                    RoundedRectangle(cornerRadius: 15)
+                        .foregroundColor(.healthOrange)
+                        .overlay(Text("Exit").font(.title))
+                        .frame(width: 196, height: 84)
+                        .padding()
+                })
+            } else {
+                NavigationLink(destination: EmptyView(), label: {
+                    RoundedRectangle(cornerRadius: 15)
+                        .foregroundColor(Color(red: 0.78, green: 0.95, blue: 1))
+                        .overlay(Text("Submit data").font(.title))
+                        .frame(width: 196, height: 84)
+                        .padding()
+                })
+            }
         }
     }
 }
+
 struct DidFeelPain: View {
     var body: some View {
         VStack {
@@ -77,6 +87,15 @@ struct DidFeelPain: View {
                     .overlay(Text("No").font(.title))
             })
             
+        }
+    }
+}
+
+struct DataSubmitted: View {
+    var body: some View {
+        VStack {
+            Text("Data has been recorded.")
+                .font(.title)
         }
     }
 }

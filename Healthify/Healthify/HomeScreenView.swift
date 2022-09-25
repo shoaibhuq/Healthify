@@ -17,20 +17,26 @@ struct HomeScreenView: View {
             
             VStack(alignment: .leading, spacing: 0) {
                 HStack {
-                    Text("Hello \(patient.firstName)!!")
-                        .font(.title)
+                    VStack(alignment: .leading, spacing: 0){
+                        Text("Good morning,")
+                            .font(Font.custom("Nunito-SemiBold", size: 32))
+                        Text("\(patient.firstName)!")
+                            .font(Font.custom("Nunito-SemiBold", size: 32))
+                    }
+
                     Spacer()
                     Image("skull")
                         .resizable()
                         .frame(width: 86, height: 86)
+                        .padding(20)
                 }
                 .padding()
                 
                 Text("Checkup")
-                    .font(.title)
+                    .font(Font.custom("Nunito-Regular", size: 32))
                     .padding(.horizontal)
                 Text("You haven't done a checkup yet")
-                    .font(.footnote)
+                    .font(Font.custom("Nunito-Regular", size: 20))
                     .padding()
                 HStack {
                     NavigationLink(destination: TutorialView(),
@@ -42,7 +48,7 @@ struct HomeScreenView: View {
                 .padding()
                 
                 Text("Special Options")
-                    .font(.title)
+                    .font(Font.custom("Nunito-Regular", size: 32))
                     .padding()
                 
                 HStack {
@@ -58,21 +64,14 @@ struct HomeScreenView: View {
                 .padding()
                 
                 Text("Personal Data")
-                    .font(.title)
+                    .font(Font.custom("Nunito-Regular", size: 32))
                     .padding()
-                
-                RoundedRectangle(cornerRadius: 20)
-                    .foregroundColor(Color(red: 0.98, green: 0.667, blue: 0.55))
-                    .frame(width: 263, height: 51)
-                    .overlay(Text("Muscle Health").font(.title2))
-                    .padding(.horizontal, 32)
                 
                 RoundedRectangle(cornerRadius: 20)
                     .foregroundColor(Color(red: 1, green: 0.98, blue: 0.62))
                     .frame(width: 263, height: 51)
-                    .overlay(Text("Doctor Reports").font(.title2))
-                    .padding(.horizontal, 16)
-                    .padding()
+                    .overlay(Text("Doctor Reports").font(Font.custom("Nunito-Regular", size: 28)))
+                    .padding(.horizontal, 24)
             }
         }
     }

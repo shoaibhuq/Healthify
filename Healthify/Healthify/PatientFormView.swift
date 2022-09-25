@@ -18,7 +18,7 @@ struct PatientFormView: View {
                 .edgesIgnoringSafeArea(.all)
             VStack(spacing: 0) {
                 Text("Before we start, let's get to know you")
-                    .font(.title)
+                    .font(Font.custom("Nunito-Regular", size: 32))
                     .padding(16)
                 Spacer()
                 Image("businessCard")
@@ -28,7 +28,7 @@ struct PatientFormView: View {
                 
                 HStack {
                     Text("First name")
-                        .font(.title)
+                        .font(Font.custom("Nunito-Regular", size: 28))
                     Spacer()
                 }
                 .padding(.horizontal, 16)
@@ -38,7 +38,7 @@ struct PatientFormView: View {
                 
                 HStack {
                     Text("Last name")
-                        .font(.title)
+                        .font(Font.custom("Nunito-Regular", size: 28))
                     Spacer()
                 }
                 .padding(.horizontal, 16)
@@ -50,7 +50,7 @@ struct PatientFormView: View {
                     RoundedRectangle(cornerRadius: 10)
                         .frame(width: 150, height: 74)
                         .foregroundColor(Color.healthOrange)
-                        .overlay(content: { Text("Next").font(.title).foregroundColor(.black) })
+                        .overlay(content: { Text("Next").font(Font.custom("Nunito-Regular", size: 32)).foregroundColor(.black) })
                         .padding(32)
                 })
             }
@@ -60,7 +60,7 @@ struct PatientFormView: View {
 
 struct PatientFormView_Previews: PreviewProvider {
     static var previews: some View {
-        PatientFormView()
+        NameAgeForm()
     }
 }
 
@@ -77,7 +77,7 @@ struct NameAgeForm: View {
                 .edgesIgnoringSafeArea(.all)
             VStack(spacing: 0) {
                 Text("Before we start, let's get to know you")
-                    .font(.title)
+                    .font(Font.custom("Nunito-Regular", size: 32))
                     .padding(16)
                 Spacer()
                 Image("businessCard")
@@ -87,7 +87,7 @@ struct NameAgeForm: View {
                 
                 HStack {
                     Text("First name")
-                        .font(.title)
+                        .font(Font.custom("Nunito-Regular", size: 28))
                     Spacer()
                 }
                 .padding(.horizontal, 16)
@@ -97,7 +97,7 @@ struct NameAgeForm: View {
                 
                 HStack {
                     Text("Last name")
-                        .font(.title)
+                        .font(Font.custom("Nunito-Regular", size: 28))
                     Spacer()
                 }
                 .padding(.horizontal, 16)
@@ -113,7 +113,7 @@ struct NameAgeForm: View {
                     RoundedRectangle(cornerRadius: 10)
                         .frame(width: 150, height: 74)
                         .foregroundColor(Color.healthOrange)
-                        .overlay(content: { Text("Next").font(.title).foregroundColor(.black) })
+                        .overlay(content: { Text("Next").font(Font.custom("Nunito-Regular", size: 28)).foregroundColor(.black) })
                         .padding(32)
                 })
                 NavigationLink(destination: AgeHeightForm(patientVM: patientVM), isActive: $moveNext, label: {EmptyView()} )
@@ -133,7 +133,7 @@ struct AgeHeightForm: View {
                 .edgesIgnoringSafeArea(.all)
             VStack(spacing: 0) {
                 Text("Just a little more information")
-                    .font(.title)
+                    .font(Font.custom("Nunito-Regular", size: 32))
                     .padding(16)
                 Spacer()
                 Image("businessCard")
@@ -143,7 +143,7 @@ struct AgeHeightForm: View {
                 
                 HStack {
                     Text("Age")
-                        .font(.title)
+                        .font(Font.custom("Nunito-Regular", size: 28))
                     Spacer()
                 }
                 .padding(.horizontal, 16)
@@ -152,7 +152,7 @@ struct AgeHeightForm: View {
                     .padding()
                 HStack {
                     Text("Height")
-                        .font(.title)
+                        .font(Font.custom("Nunito-Regular", size: 28))
                     Spacer()
                 }
                 .padding(.horizontal, 16)
@@ -190,7 +190,7 @@ struct PhoneEmailForm: View {
                 .edgesIgnoringSafeArea(.all)
             VStack(spacing: 0) {
                 Text("Almost there")
-                    .font(.title)
+                    .font(Font.custom("Nunito-Regular", size: 32))
                     .padding(16)
                 Spacer()
                 Image("businessCard")
@@ -200,7 +200,7 @@ struct PhoneEmailForm: View {
                 
                 HStack {
                     Text("Phone Number")
-                        .font(.title)
+                        .font(Font.custom("Nunito-Regular", size: 28))
                     Spacer()
                 }
                 .padding(.horizontal, 16)
@@ -210,7 +210,7 @@ struct PhoneEmailForm: View {
 
                 HStack {
                     Text("Email")
-                        .font(.title)
+                        .font(Font.custom("Nunito-Regular", size: 28))
                     Spacer()
                 }
                 .padding(.horizontal, 16)
@@ -226,7 +226,7 @@ struct PhoneEmailForm: View {
                     RoundedRectangle(cornerRadius: 10)
                         .frame(width: 150, height: 74)
                         .foregroundColor(Color.healthOrange)
-                        .overlay(content: { Text("Next").font(.title).foregroundColor(.black) })
+                        .overlay(content: { Text("Next").font(Font.custom("Nunito-Regular", size: 32)).foregroundColor(.black) })
                         .padding(32)
                 })
                 NavigationLink(destination: PhysicianForm(patientVM: patientVM), isActive: $moveNext, label: {EmptyView()} )
@@ -247,7 +247,7 @@ struct PhysicianForm: View {
                 .edgesIgnoringSafeArea(.all)
             VStack(spacing: 0) {
                 Text("Last part, I promise")
-                    .font(.title)
+                    .font(Font.custom("Nunito-Regular", size: 32))
                     .padding(16)
                 Spacer()
                 Image("businessCard")
@@ -257,7 +257,7 @@ struct PhysicianForm: View {
                 
                 HStack {
                     Text("Primary Care Physician")
-                        .font(.title)
+                        .font(Font.custom("Nunito-Regular", size: 28))
                     Spacer()
                 }
                 .padding(.horizontal, 16)
@@ -267,7 +267,7 @@ struct PhysicianForm: View {
 
                 HStack {
                     Text("Physician Email")
-                        .font(.title)
+                        .font(Font.custom("Nunito-Regular", size: 28))
                     Spacer()
                 }
                 .padding(.horizontal, 16)
@@ -284,7 +284,7 @@ struct PhysicianForm: View {
                     RoundedRectangle(cornerRadius: 10)
                         .frame(width: 150, height: 74)
                         .foregroundColor(Color.healthOrange)
-                        .overlay(content: { Text("Next").font(.title).foregroundColor(.black) })
+                        .overlay(content: { Text("Next").font(Font.custom("Nunito-Regular", size: 32)).foregroundColor(.black) })
                         .padding(32)
                 })
                 NavigationLink(destination: HomeScreenView(patient: patientVM.patient), isActive: $moveNext, label: {EmptyView()} )

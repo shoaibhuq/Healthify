@@ -57,7 +57,7 @@ struct PainView: View {
                         .padding()
                 })
             } else {
-                NavigationLink(destination: EmptyView(), label: {
+                NavigationLink(destination: HomeScreenView(patient: Patient()).navigationBarBackButtonHidden(true), label: {
                     RoundedRectangle(cornerRadius: 15)
                         .foregroundColor(Color(red: 0.78, green: 0.95, blue: 1))
                         .overlay(Text("Submit data").font(.title))
@@ -78,14 +78,25 @@ struct DidFeelPain: View {
             NavigationLink(destination: PainView(), label: {
                 RoundedRectangle(cornerRadius: 15)
                     .foregroundColor(.healthOrange)
+                    .frame(width: 196, height: 84)
                     .overlay(Text("Yes").font(.title))
             })
             
-            NavigationLink(destination: ARViewContainer(), label: {
-                RoundedRectangle(cornerRadius: 15)
-                    .foregroundColor(Color(red: 0.78, green: 0.95, blue: 1))
-                    .overlay(Text("No").font(.title))
+            if (eventCount < 1) {
+                NavigationLink(destination: ARViewContainer(), label: {
+                    RoundedRectangle(cornerRadius: 15)
+                        .foregroundColor(Color(red: 0.78, green: 0.95, blue: 1))
+                        .frame(width: 196, height: 84)
+                        .overlay(Text("No").font(.title))
+                })
+            } else {
+                NavigationLink(destination: HomeScreenView(patient: Patient()).navigationBarBackButtonHidden(true), label: {
+                    RoundedRectangle(cornerRadius: 15)
+                        .foregroundColor(Color(red: 0.78, green: 0.95, blue: 1))
+                        .frame(width: 196, height: 84)
+                        .overlay(Text("No").font(.title))
             })
+            
             
         }
     }

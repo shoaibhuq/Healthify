@@ -9,9 +9,10 @@ import SwiftUI
 
 struct GuidanceView: View {
     @ObservedObject var arVM = arContainerModel
+    @State var goToPain = false
     var body: some View {
         VStack {
-//            ARViewContainer()
+            ARViewContainer()
             HStack {
                 GifImage("ThuNha")
                 VStack {
@@ -21,12 +22,14 @@ struct GuidanceView: View {
                         .foregroundColor(.healthOrange)
                 }
             }
+            NavigationLink(destination: DidFeelPain(), isActive: $goToPain, label: { Text("") })
         }
         .onChange(of: arVM.transition, perform: { _ in
             if arVM.transition == true {
                 print("ASLDKJ")
                 soundFlag = true
                 arVM.transition = false
+                goToPain = true
             }
         })
     }

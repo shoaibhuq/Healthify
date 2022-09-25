@@ -6,10 +6,12 @@
 //
 
 import SwiftUI
+import Combine
 
 struct PatientFormView: View {
     @ObservedObject var patientVM = PatientFormViewModel()
-    @State var firstName: String = ""
+    @ObservedObject var firstName = TestViewModel()
+    //@State var firstName: String = ""
     @State var lastName: String = ""
     @State var phoneNumber: String = ""
     var body: some View {
@@ -32,7 +34,7 @@ struct PatientFormView: View {
                     Spacer()
                 }
                 .padding(.horizontal, 16)
-                TextField("First name", text: $firstName)
+                TextField("First name", text: $firstName.text)
                     .textFieldStyle(RoundedCornerTextFieldStyle())
                     .padding()
                 

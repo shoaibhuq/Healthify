@@ -71,6 +71,7 @@
 		89A4DF8128DEE9B900D325BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89A4DF8028DEE9B900D325BA /* Assets.xcassets */; };
 		89A4DF8428DEE9B900D325BA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89A4DF8328DEE9B900D325BA /* Preview Assets.xcassets */; };
 		89A4DFB328DF7BFE00D325BA /* EventLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A4DFB228DF7BFE00D325BA /* EventLogic.swift */; };
+		89D89E3E28E06752005682A7 /* TestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D89E3D28E06752005682A7 /* TestViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -139,6 +140,7 @@
 		89A4DF8028DEE9B900D325BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89A4DF8328DEE9B900D325BA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		89A4DFB228DF7BFE00D325BA /* EventLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventLogic.swift; sourceTree = "<group>"; };
+		89D89E3D28E06752005682A7 /* TestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +271,7 @@
 				423F8C0028E00A4D00874A5D /* GuidanceView.swift */,
 				423F8C0828E02D7C00874A5D /* GuidanceView2.swift */,
 				423F8C0628E0206900874A5D /* PainView.swift */,
+				89D89E3D28E06752005682A7 /* TestViewModel.swift */,
 				423F8C0228E00D8600874A5D /* Squat_side_fixed.gif */,
 				423F8BF028DF8CBB00874A5D /* ThuNha.gif */,
 				423F8BC828DEF40E00874A5D /* ARViewContainer.swift */,
@@ -410,6 +413,7 @@
 			files = (
 				89A4DF7F28DEE9B600D325BA /* ContentView.swift in Sources */,
 				423F8BF328DF97BD00874A5D /* PatientFormViewModel.swift in Sources */,
+				89D89E3E28E06752005682A7 /* TestViewModel.swift in Sources */,
 				423F8C0928E02D7C00874A5D /* GuidanceView2.swift in Sources */,
 				423F8BF528DFAD6C00874A5D /* SwiftUIView.swift in Sources */,
 				423F8BE928DF7F4600874A5D /* PatientFormView.swift in Sources */,

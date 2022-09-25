@@ -7,9 +7,11 @@
 
 import Foundation
 import SwiftUI
+import Combine
 
 struct HomeScreenView: View {
     var patient: Patient
+    @ObservedObject var firstName = TestViewModel()
     var body: some View {
         ZStack {
             Color.healthCream
@@ -20,7 +22,7 @@ struct HomeScreenView: View {
                     VStack(alignment: .leading, spacing: 0){
                         Text("Good morning,")
                             .font(Font.custom("Nunito-SemiBold", size: 32))
-                        Text("\(patient.firstName)!")
+                        Text("\(firstName.text)!")
                             .font(Font.custom("Nunito-SemiBold", size: 32))
                     }
 

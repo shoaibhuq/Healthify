@@ -41,7 +41,9 @@ struct HomeView: View {
                     .resizable()
                     .frame(width: 200, height: 200)
                 Text("HEALTHIFY")
-                    .font(.title)
+                    .font(Font.custom("BeVietnamPro-Medium", size: 36))
+                    .tracking(5)
+                
                     .padding()
                 
                 Spacer()
@@ -50,13 +52,13 @@ struct HomeView: View {
                     RoundedRectangle(cornerRadius: 10)
                         .frame(width: 250, height: 74)
                         .foregroundColor(Color.healthOrange)
-                        .overlay(content: { Text("Register").font(.title).foregroundColor(.black) })
+                        .overlay(content: { Text("Register").font(Font.custom("Nunito-Regular", size: 32)).foregroundColor(.black) })
                 })
                 NavigationLink(destination: HomeScreenView(patient: Patient()), label: {
                     RoundedRectangle(cornerRadius: 10)
                         .frame(width: 200, height: 74)
                         .foregroundColor(Color(UIColor(red: 0.85, green: 0.85, blue: 0.85, alpha: 1)))
-                        .overlay(content: { Text("Login").font(.title).foregroundColor(.black) })
+                        .overlay(content: { Text("Login").font(Font.custom("Nunito-Regular", size: 28)).foregroundColor(.black) })
                         .padding(16)
                         .padding(.bottom, 32)
                 })

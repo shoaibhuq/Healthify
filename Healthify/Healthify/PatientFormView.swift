@@ -6,10 +6,12 @@
 //
 
 import SwiftUI
+import Combine
 
 struct PatientFormView: View {
     @ObservedObject var patientVM = PatientFormViewModel()
-    @State var firstName: String = ""
+    @ObservedObject var firstName = TestViewModel()
+    //@State var firstName: String = ""
     @State var lastName: String = ""
     @State var phoneNumber: String = ""
     var body: some View {
@@ -18,7 +20,7 @@ struct PatientFormView: View {
                 .edgesIgnoringSafeArea(.all)
             VStack(spacing: 0) {
                 Text("Before we start, let's get to know you")
-                    .font(.title)
+                    .font(Font.custom("Nunito-Regular", size: 32))
                     .padding(16)
                 Spacer()
                 Image("businessCard")
@@ -28,17 +30,17 @@ struct PatientFormView: View {
                 
                 HStack {
                     Text("First name")
-                        .font(.title)
+                        .font(Font.custom("Nunito-Regular", size: 28))
                     Spacer()
                 }
                 .padding(.horizontal, 16)
-                TextField("First name", text: $firstName)
+                TextField("First name", text: $firstName.text)
                     .textFieldStyle(RoundedCornerTextFieldStyle())
                     .padding()
                 
                 HStack {
                     Text("Last name")
-                        .font(.title)
+                        .font(Font.custom("Nunito-Regular", size: 28))
                     Spacer()
                 }
                 .padding(.horizontal, 16)
@@ -50,7 +52,7 @@ struct PatientFormView: View {
                     RoundedRectangle(cornerRadius: 10)
                         .frame(width: 150, height: 74)
                         .foregroundColor(Color.healthOrange)
-                        .overlay(content: { Text("Next").font(.title).foregroundColor(.black) })
+                        .overlay(content: { Text("Next").font(Font.custom("Nunito-Regular", size: 32)).foregroundColor(.black) })
                         .padding(32)
                 })
             }
@@ -60,7 +62,7 @@ struct PatientFormView: View {
 
 struct PatientFormView_Previews: PreviewProvider {
     static var previews: some View {
-        PatientFormView()
+        NameAgeForm()
     }
 }
 
@@ -77,7 +79,7 @@ struct NameAgeForm: View {
                 .edgesIgnoringSafeArea(.all)
             VStack(spacing: 0) {
                 Text("Before we start, let's get to know you")
-                    .font(.title)
+                    .font(Font.custom("Nunito-Regular", size: 32))
                     .padding(16)
                 Spacer()
                 Image("businessCard")
@@ -87,22 +89,26 @@ struct NameAgeForm: View {
                 
                 HStack {
                     Text("First name")
-                        .font(.title)
+                        .font(Font.custom("Nunito-Regular", size: 28))
                     Spacer()
                 }
                 .padding(.horizontal, 16)
                 TextField("First name", text: $firstName)
                     .textFieldStyle(RoundedCornerTextFieldStyle())
+                    .keyboardType(.namePhonePad)
+                    .textContentType(.givenName)
                     .padding()
                 
                 HStack {
                     Text("Last name")
-                        .font(.title)
+                        .font(Font.custom("Nunito-Regular", size: 28))
                     Spacer()
                 }
                 .padding(.horizontal, 16)
                 TextField("Last name", text: $lastName)
                     .textFieldStyle(RoundedCornerTextFieldStyle())
+                    .keyboardType(.namePhonePad)
+                    .textContentType(.familyName)
                     .padding()
                 
                 Button(action: {
@@ -113,7 +119,7 @@ struct NameAgeForm: View {
                     RoundedRectangle(cornerRadius: 10)
                         .frame(width: 150, height: 74)
                         .foregroundColor(Color.healthOrange)
-                        .overlay(content: { Text("Next").font(.title).foregroundColor(.black) })
+                        .overlay(content: { Text("Next").font(Font.custom("Nunito-Regular", size: 28)).foregroundColor(.black) })
                         .padding(32)
                 })
                 NavigationLink(destination: AgeHeightForm(patientVM: patientVM), isActive: $moveNext, label: {EmptyView()} )
@@ -133,32 +139,34 @@ struct AgeHeightForm: View {
                 .edgesIgnoringSafeArea(.all)
             VStack(spacing: 0) {
                 Text("Just a little more information")
-                    .font(.title)
+                    .font(Font.custom("Nunito-Regular", size: 32))
                     .padding(16)
                 Spacer()
-                Image("businessCard")
+                Image("speedometer")
                     .resizable()
                     .frame(width: 218, height: 218)
                 Spacer()
                 
                 HStack {
                     Text("Age")
-                        .font(.title)
+                        .font(Font.custom("Nunito-Regular", size: 28))
                     Spacer()
                 }
                 .padding(.horizontal, 16)
                 TextField("Age", value: $age, format: .number)
                     .textFieldStyle(RoundedCornerTextFieldStyle())
+                    .keyboardType(.numberPad)
                     .padding()
                 HStack {
-                    Text("Height")
-                        .font(.title)
+                    Text("Height (cm)")
+                        .font(Font.custom("Nunito-Regular", size: 28))
                     Spacer()
                 }
                 .padding(.horizontal, 16)
                 
-                TextField("Height", value: $height, format: .number)
+                TextField("Height (cm)", value: $height, format: .number)
                     .textFieldStyle(RoundedCornerTextFieldStyle())
+                    .keyboardType(.numberPad)
                     .padding()
                 
                 
@@ -190,32 +198,36 @@ struct PhoneEmailForm: View {
                 .edgesIgnoringSafeArea(.all)
             VStack(spacing: 0) {
                 Text("Almost there")
-                    .font(.title)
+                    .font(Font.custom("Nunito-Regular", size: 32))
                     .padding(16)
                 Spacer()
-                Image("businessCard")
+                Image("call")
                     .resizable()
                     .frame(width: 218, height: 218)
                 Spacer()
                 
                 HStack {
                     Text("Phone Number")
-                        .font(.title)
+                        .font(Font.custom("Nunito-Regular", size: 28))
                     Spacer()
                 }
                 .padding(.horizontal, 16)
                 TextField("Phone Number", text: $phoneNumber)
                     .textFieldStyle(RoundedCornerTextFieldStyle())
+                    .textContentType(.telephoneNumber)
+                    .keyboardType(.phonePad)
                     .padding()
 
                 HStack {
                     Text("Email")
-                        .font(.title)
+                        .font(Font.custom("Nunito-Regular", size: 28))
                     Spacer()
                 }
                 .padding(.horizontal, 16)
                 TextField("personal@domain.com", text: $email)
                     .textFieldStyle(RoundedCornerTextFieldStyle())
+                    .keyboardType(.emailAddress)
+                    .textContentType(.emailAddress)
                     .padding()
                 
                 Button(action: {
@@ -226,7 +238,7 @@ struct PhoneEmailForm: View {
                     RoundedRectangle(cornerRadius: 10)
                         .frame(width: 150, height: 74)
                         .foregroundColor(Color.healthOrange)
-                        .overlay(content: { Text("Next").font(.title).foregroundColor(.black) })
+                        .overlay(content: { Text("Next").font(Font.custom("Nunito-Regular", size: 32)).foregroundColor(.black) })
                         .padding(32)
                 })
                 NavigationLink(destination: PhysicianForm(patientVM: patientVM), isActive: $moveNext, label: {EmptyView()} )
@@ -247,32 +259,36 @@ struct PhysicianForm: View {
                 .edgesIgnoringSafeArea(.all)
             VStack(spacing: 0) {
                 Text("Last part, I promise")
-                    .font(.title)
+                    .font(Font.custom("Nunito-Regular", size: 32))
                     .padding(16)
                 Spacer()
-                Image("businessCard")
+                Image("heart")
                     .resizable()
                     .frame(width: 218, height: 218)
                 Spacer()
                 
                 HStack {
                     Text("Primary Care Physician")
-                        .font(.title)
+                        .font(Font.custom("Nunito-Regular", size: 28))
                     Spacer()
                 }
                 .padding(.horizontal, 16)
                 TextField("First / Last name", text: $physicianName)
                     .textFieldStyle(RoundedCornerTextFieldStyle())
+                    .textContentType(.name)
+                    .keyboardType(.namePhonePad)
                     .padding()
 
                 HStack {
                     Text("Physician Email")
-                        .font(.title)
+                        .font(Font.custom("Nunito-Regular", size: 28))
                     Spacer()
                 }
                 .padding(.horizontal, 16)
                 TextField("physician@domain.com", text: $physicianEmail)
                     .textFieldStyle(RoundedCornerTextFieldStyle())
+                    .keyboardType(.emailAddress)
+                    .textContentType(.emailAddress)
                     .padding()
                 
                 Button(action: {
@@ -284,10 +300,10 @@ struct PhysicianForm: View {
                     RoundedRectangle(cornerRadius: 10)
                         .frame(width: 150, height: 74)
                         .foregroundColor(Color.healthOrange)
-                        .overlay(content: { Text("Next").font(.title).foregroundColor(.black) })
+                        .overlay(content: { Text("Next").font(Font.custom("Nunito-Regular", size: 32)).foregroundColor(.black) })
                         .padding(32)
                 })
-                NavigationLink(destination: HomeScreenView(patient: patientVM.patient), isActive: $moveNext, label: {EmptyView()} )
+                NavigationLink(destination: HomeScreenView(patient: patientVM.patient).navigationBarBackButtonHidden(true), isActive: $moveNext, label: {EmptyView()} )
             }
         }
     }

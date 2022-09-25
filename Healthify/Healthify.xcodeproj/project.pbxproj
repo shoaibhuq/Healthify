@@ -29,11 +29,50 @@
 		423F8C0728E0206A00874A5D /* PainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423F8C0628E0206900874A5D /* PainView.swift */; };
 		423F8C0928E02D7C00874A5D /* GuidanceView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 423F8C0828E02D7C00874A5D /* GuidanceView2.swift */; };
 		423F8C0B28E03D3F00874A5D /* ArmSwing_fixed.gif in Resources */ = {isa = PBXBuildFile; fileRef = 423F8C0A28E03D3F00874A5D /* ArmSwing_fixed.gif */; };
+		89326F6728E03D7200420EEA /* Nunito-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 89326F5228E03D7200420EEA /* Nunito-VariableFont_wght.ttf */; };
+		89326F6828E03D7200420EEA /* Nunito-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 89326F5428E03D7200420EEA /* Nunito-Medium.ttf */; };
+		89326F6928E03D7200420EEA /* Nunito-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 89326F5528E03D7200420EEA /* Nunito-ExtraBoldItalic.ttf */; };
+		89326F6A28E03D7200420EEA /* Nunito-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 89326F5628E03D7200420EEA /* Nunito-ExtraBold.ttf */; };
+		89326F6B28E03D7200420EEA /* Nunito-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 89326F5728E03D7200420EEA /* Nunito-ExtraLightItalic.ttf */; };
+		89326F6C28E03D7200420EEA /* Nunito-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 89326F5828E03D7200420EEA /* Nunito-Light.ttf */; };
+		89326F6D28E03D7200420EEA /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 89326F5928E03D7200420EEA /* Nunito-Regular.ttf */; };
+		89326F6E28E03D7200420EEA /* Nunito-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 89326F5A28E03D7200420EEA /* Nunito-SemiBold.ttf */; };
+		89326F6F28E03D7200420EEA /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 89326F5B28E03D7200420EEA /* Nunito-Bold.ttf */; };
+		89326F7028E03D7200420EEA /* Nunito-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 89326F5C28E03D7200420EEA /* Nunito-BoldItalic.ttf */; };
+		89326F7128E03D7200420EEA /* Nunito-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 89326F5D28E03D7200420EEA /* Nunito-Black.ttf */; };
+		89326F7228E03D7200420EEA /* Nunito-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 89326F5E28E03D7200420EEA /* Nunito-ExtraLight.ttf */; };
+		89326F7328E03D7200420EEA /* Nunito-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 89326F5F28E03D7200420EEA /* Nunito-SemiBoldItalic.ttf */; };
+		89326F7428E03D7200420EEA /* Nunito-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 89326F6028E03D7200420EEA /* Nunito-BlackItalic.ttf */; };
+		89326F7528E03D7200420EEA /* Nunito-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 89326F6128E03D7200420EEA /* Nunito-Italic.ttf */; };
+		89326F7628E03D7200420EEA /* Nunito-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 89326F6228E03D7200420EEA /* Nunito-LightItalic.ttf */; };
+		89326F7728E03D7200420EEA /* Nunito-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 89326F6328E03D7200420EEA /* Nunito-MediumItalic.ttf */; };
+		89326F7828E03D7200420EEA /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 89326F6428E03D7200420EEA /* OFL.txt */; };
+		89326F7928E03D7200420EEA /* Nunito-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 89326F6528E03D7200420EEA /* Nunito-Italic-VariableFont_wght.ttf */; };
+		89326F7A28E03D7200420EEA /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = 89326F6628E03D7200420EEA /* README.txt */; };
+		89326F9028E03F1100420EEA /* BeVietnamPro-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 89326F7D28E03F1100420EEA /* BeVietnamPro-SemiBold.ttf */; };
+		89326F9128E03F1100420EEA /* BeVietnamPro-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 89326F7E28E03F1100420EEA /* BeVietnamPro-Light.ttf */; };
+		89326F9228E03F1100420EEA /* BeVietnamPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 89326F7F28E03F1100420EEA /* BeVietnamPro-Regular.ttf */; };
+		89326F9328E03F1100420EEA /* BeVietnamPro-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 89326F8028E03F1100420EEA /* BeVietnamPro-Medium.ttf */; };
+		89326F9428E03F1100420EEA /* BeVietnamPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 89326F8128E03F1100420EEA /* BeVietnamPro-Bold.ttf */; };
+		89326F9528E03F1100420EEA /* BeVietnamPro-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 89326F8228E03F1100420EEA /* BeVietnamPro-BlackItalic.ttf */; };
+		89326F9728E03F1100420EEA /* BeVietnamPro-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 89326F8428E03F1100420EEA /* BeVietnamPro-Thin.ttf */; };
+		89326F9828E03F1100420EEA /* BeVietnamPro-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 89326F8528E03F1100420EEA /* BeVietnamPro-Italic.ttf */; };
+		89326F9928E03F1100420EEA /* BeVietnamPro-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 89326F8628E03F1100420EEA /* BeVietnamPro-ExtraLightItalic.ttf */; };
+		89326F9A28E03F1100420EEA /* BeVietnamPro-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 89326F8728E03F1100420EEA /* BeVietnamPro-MediumItalic.ttf */; };
+		89326F9B28E03F1100420EEA /* BeVietnamPro-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 89326F8828E03F1100420EEA /* BeVietnamPro-BoldItalic.ttf */; };
+		89326F9C28E03F1100420EEA /* BeVietnamPro-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 89326F8928E03F1100420EEA /* BeVietnamPro-SemiBoldItalic.ttf */; };
+		89326F9D28E03F1100420EEA /* BeVietnamPro-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 89326F8A28E03F1100420EEA /* BeVietnamPro-ExtraLight.ttf */; };
+		89326F9E28E03F1100420EEA /* BeVietnamPro-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 89326F8B28E03F1100420EEA /* BeVietnamPro-ThinItalic.ttf */; };
+		89326F9F28E03F1100420EEA /* BeVietnamPro-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 89326F8C28E03F1100420EEA /* BeVietnamPro-ExtraBold.ttf */; };
+		89326FA028E03F1100420EEA /* BeVietnamPro-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 89326F8D28E03F1100420EEA /* BeVietnamPro-ExtraBoldItalic.ttf */; };
+		89326FA128E03F1100420EEA /* BeVietnamPro-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 89326F8E28E03F1100420EEA /* BeVietnamPro-Black.ttf */; };
+		89326FA228E03F1100420EEA /* BeVietnamPro-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 89326F8F28E03F1100420EEA /* BeVietnamPro-LightItalic.ttf */; };
 		89A4DF7D28DEE9B600D325BA /* HealthifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A4DF7C28DEE9B600D325BA /* HealthifyApp.swift */; };
 		89A4DF7F28DEE9B600D325BA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A4DF7E28DEE9B600D325BA /* ContentView.swift */; };
 		89A4DF8128DEE9B900D325BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89A4DF8028DEE9B900D325BA /* Assets.xcassets */; };
 		89A4DF8428DEE9B900D325BA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89A4DF8328DEE9B900D325BA /* Preview Assets.xcassets */; };
 		89A4DFB328DF7BFE00D325BA /* EventLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A4DFB228DF7BFE00D325BA /* EventLogic.swift */; };
+		89D89E3E28E06752005682A7 /* TestViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89D89E3D28E06752005682A7 /* TestViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,12 +97,52 @@
 		423F8C0628E0206900874A5D /* PainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PainView.swift; sourceTree = "<group>"; };
 		423F8C0828E02D7C00874A5D /* GuidanceView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidanceView2.swift; sourceTree = "<group>"; };
 		423F8C0A28E03D3F00874A5D /* ArmSwing_fixed.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ArmSwing_fixed.gif; sourceTree = "<group>"; };
+		89326F5228E03D7200420EEA /* Nunito-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		89326F5428E03D7200420EEA /* Nunito-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Medium.ttf"; sourceTree = "<group>"; };
+		89326F5528E03D7200420EEA /* Nunito-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		89326F5628E03D7200420EEA /* Nunito-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraBold.ttf"; sourceTree = "<group>"; };
+		89326F5728E03D7200420EEA /* Nunito-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		89326F5828E03D7200420EEA /* Nunito-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Light.ttf"; sourceTree = "<group>"; };
+		89326F5928E03D7200420EEA /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
+		89326F5A28E03D7200420EEA /* Nunito-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-SemiBold.ttf"; sourceTree = "<group>"; };
+		89326F5B28E03D7200420EEA /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
+		89326F5C28E03D7200420EEA /* Nunito-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-BoldItalic.ttf"; sourceTree = "<group>"; };
+		89326F5D28E03D7200420EEA /* Nunito-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Black.ttf"; sourceTree = "<group>"; };
+		89326F5E28E03D7200420EEA /* Nunito-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraLight.ttf"; sourceTree = "<group>"; };
+		89326F5F28E03D7200420EEA /* Nunito-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		89326F6028E03D7200420EEA /* Nunito-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-BlackItalic.ttf"; sourceTree = "<group>"; };
+		89326F6128E03D7200420EEA /* Nunito-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Italic.ttf"; sourceTree = "<group>"; };
+		89326F6228E03D7200420EEA /* Nunito-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-LightItalic.ttf"; sourceTree = "<group>"; };
+		89326F6328E03D7200420EEA /* Nunito-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-MediumItalic.ttf"; sourceTree = "<group>"; };
+		89326F6428E03D7200420EEA /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		89326F6528E03D7200420EEA /* Nunito-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		89326F6628E03D7200420EEA /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		89326F7B28E03DCA00420EEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		89326F7D28E03F1100420EEA /* BeVietnamPro-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BeVietnamPro-SemiBold.ttf"; sourceTree = "<group>"; };
+		89326F7E28E03F1100420EEA /* BeVietnamPro-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BeVietnamPro-Light.ttf"; sourceTree = "<group>"; };
+		89326F7F28E03F1100420EEA /* BeVietnamPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BeVietnamPro-Regular.ttf"; sourceTree = "<group>"; };
+		89326F8028E03F1100420EEA /* BeVietnamPro-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BeVietnamPro-Medium.ttf"; sourceTree = "<group>"; };
+		89326F8128E03F1100420EEA /* BeVietnamPro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BeVietnamPro-Bold.ttf"; sourceTree = "<group>"; };
+		89326F8228E03F1100420EEA /* BeVietnamPro-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BeVietnamPro-BlackItalic.ttf"; sourceTree = "<group>"; };
+		89326F8428E03F1100420EEA /* BeVietnamPro-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BeVietnamPro-Thin.ttf"; sourceTree = "<group>"; };
+		89326F8528E03F1100420EEA /* BeVietnamPro-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BeVietnamPro-Italic.ttf"; sourceTree = "<group>"; };
+		89326F8628E03F1100420EEA /* BeVietnamPro-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BeVietnamPro-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		89326F8728E03F1100420EEA /* BeVietnamPro-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BeVietnamPro-MediumItalic.ttf"; sourceTree = "<group>"; };
+		89326F8828E03F1100420EEA /* BeVietnamPro-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BeVietnamPro-BoldItalic.ttf"; sourceTree = "<group>"; };
+		89326F8928E03F1100420EEA /* BeVietnamPro-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BeVietnamPro-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		89326F8A28E03F1100420EEA /* BeVietnamPro-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BeVietnamPro-ExtraLight.ttf"; sourceTree = "<group>"; };
+		89326F8B28E03F1100420EEA /* BeVietnamPro-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BeVietnamPro-ThinItalic.ttf"; sourceTree = "<group>"; };
+		89326F8C28E03F1100420EEA /* BeVietnamPro-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BeVietnamPro-ExtraBold.ttf"; sourceTree = "<group>"; };
+		89326F8D28E03F1100420EEA /* BeVietnamPro-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BeVietnamPro-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		89326F8E28E03F1100420EEA /* BeVietnamPro-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BeVietnamPro-Black.ttf"; sourceTree = "<group>"; };
+		89326F8F28E03F1100420EEA /* BeVietnamPro-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BeVietnamPro-LightItalic.ttf"; sourceTree = "<group>"; };
 		89A4DF7928DEE9B600D325BA /* Healthify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Healthify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89A4DF7C28DEE9B600D325BA /* HealthifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthifyApp.swift; sourceTree = "<group>"; };
 		89A4DF7E28DEE9B600D325BA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		89A4DF8028DEE9B900D325BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89A4DF8328DEE9B900D325BA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		89A4DFB228DF7BFE00D325BA /* EventLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventLogic.swift; sourceTree = "<group>"; };
+		89D89E3D28E06752005682A7 /* TestViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +164,77 @@
 			path = Junk;
 			sourceTree = "<group>";
 		};
+		89326F5028E03D6900420EEA /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				89326F7C28E03F1100420EEA /* Be_Vietnam_Pro */,
+				89326F5128E03D7200420EEA /* Nunito */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		89326F5128E03D7200420EEA /* Nunito */ = {
+			isa = PBXGroup;
+			children = (
+				89326F5228E03D7200420EEA /* Nunito-VariableFont_wght.ttf */,
+				89326F5328E03D7200420EEA /* static */,
+				89326F6428E03D7200420EEA /* OFL.txt */,
+				89326F6528E03D7200420EEA /* Nunito-Italic-VariableFont_wght.ttf */,
+				89326F6628E03D7200420EEA /* README.txt */,
+			);
+			name = Nunito;
+			path = ../../../../../../Downloads/Nunito;
+			sourceTree = "<group>";
+		};
+		89326F5328E03D7200420EEA /* static */ = {
+			isa = PBXGroup;
+			children = (
+				89326F5428E03D7200420EEA /* Nunito-Medium.ttf */,
+				89326F5528E03D7200420EEA /* Nunito-ExtraBoldItalic.ttf */,
+				89326F5628E03D7200420EEA /* Nunito-ExtraBold.ttf */,
+				89326F5728E03D7200420EEA /* Nunito-ExtraLightItalic.ttf */,
+				89326F5828E03D7200420EEA /* Nunito-Light.ttf */,
+				89326F5928E03D7200420EEA /* Nunito-Regular.ttf */,
+				89326F5A28E03D7200420EEA /* Nunito-SemiBold.ttf */,
+				89326F5B28E03D7200420EEA /* Nunito-Bold.ttf */,
+				89326F5C28E03D7200420EEA /* Nunito-BoldItalic.ttf */,
+				89326F5D28E03D7200420EEA /* Nunito-Black.ttf */,
+				89326F5E28E03D7200420EEA /* Nunito-ExtraLight.ttf */,
+				89326F5F28E03D7200420EEA /* Nunito-SemiBoldItalic.ttf */,
+				89326F6028E03D7200420EEA /* Nunito-BlackItalic.ttf */,
+				89326F6128E03D7200420EEA /* Nunito-Italic.ttf */,
+				89326F6228E03D7200420EEA /* Nunito-LightItalic.ttf */,
+				89326F6328E03D7200420EEA /* Nunito-MediumItalic.ttf */,
+			);
+			path = static;
+			sourceTree = "<group>";
+		};
+		89326F7C28E03F1100420EEA /* Be_Vietnam_Pro */ = {
+			isa = PBXGroup;
+			children = (
+				89326F7D28E03F1100420EEA /* BeVietnamPro-SemiBold.ttf */,
+				89326F7E28E03F1100420EEA /* BeVietnamPro-Light.ttf */,
+				89326F7F28E03F1100420EEA /* BeVietnamPro-Regular.ttf */,
+				89326F8028E03F1100420EEA /* BeVietnamPro-Medium.ttf */,
+				89326F8128E03F1100420EEA /* BeVietnamPro-Bold.ttf */,
+				89326F8228E03F1100420EEA /* BeVietnamPro-BlackItalic.ttf */,
+				89326F8428E03F1100420EEA /* BeVietnamPro-Thin.ttf */,
+				89326F8528E03F1100420EEA /* BeVietnamPro-Italic.ttf */,
+				89326F8628E03F1100420EEA /* BeVietnamPro-ExtraLightItalic.ttf */,
+				89326F8728E03F1100420EEA /* BeVietnamPro-MediumItalic.ttf */,
+				89326F8828E03F1100420EEA /* BeVietnamPro-BoldItalic.ttf */,
+				89326F8928E03F1100420EEA /* BeVietnamPro-SemiBoldItalic.ttf */,
+				89326F8A28E03F1100420EEA /* BeVietnamPro-ExtraLight.ttf */,
+				89326F8B28E03F1100420EEA /* BeVietnamPro-ThinItalic.ttf */,
+				89326F8C28E03F1100420EEA /* BeVietnamPro-ExtraBold.ttf */,
+				89326F8D28E03F1100420EEA /* BeVietnamPro-ExtraBoldItalic.ttf */,
+				89326F8E28E03F1100420EEA /* BeVietnamPro-Black.ttf */,
+				89326F8F28E03F1100420EEA /* BeVietnamPro-LightItalic.ttf */,
+			);
+			name = Be_Vietnam_Pro;
+			path = ../../../../../../Downloads/Be_Vietnam_Pro;
+			sourceTree = "<group>";
+		};
 		89A4DF7028DEE9B600D325BA = {
 			isa = PBXGroup;
 			children = (
@@ -104,6 +254,7 @@
 		89A4DF7B28DEE9B600D325BA /* Healthify */ = {
 			isa = PBXGroup;
 			children = (
+				89326F7B28E03DCA00420EEA /* Info.plist */,
 				89A4DF8028DEE9B900D325BA /* Assets.xcassets */,
 				423F8C0428E0105600874A5D /* ARContainerModel.swift */,
 				89A4DF7C28DEE9B600D325BA /* HealthifyApp.swift */,
@@ -122,12 +273,14 @@
 				423F8C0028E00A4D00874A5D /* GuidanceView.swift */,
 				423F8C0828E02D7C00874A5D /* GuidanceView2.swift */,
 				423F8C0628E0206900874A5D /* PainView.swift */,
+				89D89E3D28E06752005682A7 /* TestViewModel.swift */,
 				423F8C0228E00D8600874A5D /* Squat_side_fixed.gif */,
 				423F8C0A28E03D3F00874A5D /* ArmSwing_fixed.gif */,
 				423F8BF028DF8CBB00874A5D /* ThuNha.gif */,
 				423F8BC828DEF40E00874A5D /* ARViewContainer.swift */,
 				89A4DFB228DF7BFE00D325BA /* EventLogic.swift */,
 				423F8BEC28DF81B600874A5D /* lottie.json */,
+				89326F5028E03D6900420EEA /* Fonts */,
 				423F8BD528DF274600874A5D /* character */,
 				423F8BD228DF214D00874A5D /* Junk */,
 				89A4DF8228DEE9B900D325BA /* Preview Content */,
@@ -207,13 +360,51 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89326F6E28E03D7200420EEA /* Nunito-SemiBold.ttf in Resources */,
+				89326F9428E03F1100420EEA /* BeVietnamPro-Bold.ttf in Resources */,
+				89326F6F28E03D7200420EEA /* Nunito-Bold.ttf in Resources */,
+				89326F9028E03F1100420EEA /* BeVietnamPro-SemiBold.ttf in Resources */,
+				89326F9528E03F1100420EEA /* BeVietnamPro-BlackItalic.ttf in Resources */,
+				89326F7728E03D7200420EEA /* Nunito-MediumItalic.ttf in Resources */,
+				89326F7028E03D7200420EEA /* Nunito-BoldItalic.ttf in Resources */,
+				89326F7228E03D7200420EEA /* Nunito-ExtraLight.ttf in Resources */,
+				89326F6828E03D7200420EEA /* Nunito-Medium.ttf in Resources */,
+				89326F7828E03D7200420EEA /* OFL.txt in Resources */,
+				89326F7928E03D7200420EEA /* Nunito-Italic-VariableFont_wght.ttf in Resources */,
 				423F8BED28DF81B600874A5D /* lottie.json in Resources */,
+				89326F6C28E03D7200420EEA /* Nunito-Light.ttf in Resources */,
+				89326F6728E03D7200420EEA /* Nunito-VariableFont_wght.ttf in Resources */,
+				89326F9E28E03F1100420EEA /* BeVietnamPro-ThinItalic.ttf in Resources */,
 				423F8BD628DF274600874A5D /* character in Resources */,
 				423F8C0B28E03D3F00874A5D /* ArmSwing_fixed.gif in Resources */,
+				89326FA028E03F1100420EEA /* BeVietnamPro-ExtraBoldItalic.ttf in Resources */,
+				89326F9328E03F1100420EEA /* BeVietnamPro-Medium.ttf in Resources */,
+				89326F9228E03F1100420EEA /* BeVietnamPro-Regular.ttf in Resources */,
+				89326F7128E03D7200420EEA /* Nunito-Black.ttf in Resources */,
 				423F8BF128DF8CBB00874A5D /* ThuNha.gif in Resources */,
+				89326F9C28E03F1100420EEA /* BeVietnamPro-SemiBoldItalic.ttf in Resources */,
 				89A4DF8428DEE9B900D325BA /* Preview Assets.xcassets in Resources */,
+				89326FA128E03F1100420EEA /* BeVietnamPro-Black.ttf in Resources */,
+				89326F7328E03D7200420EEA /* Nunito-SemiBoldItalic.ttf in Resources */,
+				89326F9A28E03F1100420EEA /* BeVietnamPro-MediumItalic.ttf in Resources */,
+				89326F9828E03F1100420EEA /* BeVietnamPro-Italic.ttf in Resources */,
+				89326F7A28E03D7200420EEA /* README.txt in Resources */,
 				423F8C0328E00D8600874A5D /* Squat_side_fixed.gif in Resources */,
+				89326F9F28E03F1100420EEA /* BeVietnamPro-ExtraBold.ttf in Resources */,
+				89326F9128E03F1100420EEA /* BeVietnamPro-Light.ttf in Resources */,
+				89326F6A28E03D7200420EEA /* Nunito-ExtraBold.ttf in Resources */,
+				89326F6B28E03D7200420EEA /* Nunito-ExtraLightItalic.ttf in Resources */,
+				89326F9928E03F1100420EEA /* BeVietnamPro-ExtraLightItalic.ttf in Resources */,
+				89326F6D28E03D7200420EEA /* Nunito-Regular.ttf in Resources */,
+				89326F9B28E03F1100420EEA /* BeVietnamPro-BoldItalic.ttf in Resources */,
 				89A4DF8128DEE9B900D325BA /* Assets.xcassets in Resources */,
+				89326F9728E03F1100420EEA /* BeVietnamPro-Thin.ttf in Resources */,
+				89326F7628E03D7200420EEA /* Nunito-LightItalic.ttf in Resources */,
+				89326F9D28E03F1100420EEA /* BeVietnamPro-ExtraLight.ttf in Resources */,
+				89326F6928E03D7200420EEA /* Nunito-ExtraBoldItalic.ttf in Resources */,
+				89326FA228E03F1100420EEA /* BeVietnamPro-LightItalic.ttf in Resources */,
+				89326F7528E03D7200420EEA /* Nunito-Italic.ttf in Resources */,
+				89326F7428E03D7200420EEA /* Nunito-BlackItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +417,7 @@
 			files = (
 				89A4DF7F28DEE9B600D325BA /* ContentView.swift in Sources */,
 				423F8BF328DF97BD00874A5D /* PatientFormViewModel.swift in Sources */,
+				89D89E3E28E06752005682A7 /* TestViewModel.swift in Sources */,
 				423F8C0928E02D7C00874A5D /* GuidanceView2.swift in Sources */,
 				423F8BF528DFAD6C00874A5D /* SwiftUIView.swift in Sources */,
 				423F8BE928DF7F4600874A5D /* PatientFormView.swift in Sources */,
@@ -374,6 +566,7 @@
 				DEVELOPMENT_TEAM = 6F3A58SWMP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Healthify/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "TURN ON THE CAMERA!!!!!";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -385,7 +578,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.khang.nguyen.trd.Healthify;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.Shoaib.Huq.Healthify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -404,6 +597,7 @@
 				DEVELOPMENT_TEAM = 6F3A58SWMP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Healthify/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "TURN ON THE CAMERA!!!!!";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -415,7 +609,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.khang.nguyen.trd.Healthify;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.Shoaib.Huq.Healthify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

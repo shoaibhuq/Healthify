@@ -17,6 +17,7 @@ let characterAnchor = AnchorEntity()
 let characterOffset: SIMD3<Float> = [-1.0, 0, 0] // Offset the character by one meter to the left
 let eventController = EventLogic()
 var soundFlag: Bool = true
+var arContainerModel = ARContainerModel()
 
 
 struct ARViewContainer: UIViewRepresentable {
@@ -82,6 +83,7 @@ extension ARView: ARSessionDelegate {
                     AudioServicesPlaySystemSound(1026)
                     print("DEBUG: PLAYED SOUND")
                     soundFlag = false
+                    arContainerModel.transition = true
                 }
                 
             }

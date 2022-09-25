@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct GuidanceView: View {
+    @ObservedObject var arVM = arContainerModel
     var body: some View {
         VStack {
 //            ARViewContainer()
@@ -21,7 +22,9 @@ struct GuidanceView: View {
                 }
             }
         }
+        .onChange(of: arVM.transition, perform: { _ in print("ASLDKJ") })
     }
+
 }
 
 //struct GuidanceView_Previews: PreviewProvider {
